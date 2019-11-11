@@ -416,6 +416,20 @@ $(document).ready(function() {
 		infinite: false,
 		cssEase: 'linear'
 	});
+
+	$(".more_view .btn_more").on('click', function(e){
+		var detailView = $('.detail_view');
+
+		if(detailView.is(".on")) {
+			detailView.removeClass('on');
+			detailView.css('maxHeight','45rem');
+		} else {
+			detailView.addClass('on');
+			detailView.css('maxHeight','none');
+		}
+		e.preventDefault();
+	});
+
 });
 </script>
 </body>
