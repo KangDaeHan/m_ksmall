@@ -35,6 +35,41 @@ function expandCollapse(id , el) {
 	});
 }
 
+var faqtit = $(".question");
+var faqsubmu = $(".answer");
+
+function tab(e, num){
+    var num = num || 0;
+    var menu = $(e).children();
+    var con = $(e+'_con').children();
+    var select = $(menu).eq(num);
+	var i = num;
+
+    select.addClass('on');
+	con.hide();
+    con.eq(num).show();
+
+	$('.terms_area .btn_area').css('border','0');
+	
+    menu.click('a' , function(e){
+        if(select!==null){
+            select.removeClass("on");
+			con.hide();
+			faqsubmu.hide();
+			faqtit.removeClass('on');
+        }
+
+        select = $(this);
+        i = $(this).index();
+
+		$('.terms_area .btn_area').css('border-top','2px solid #fab000');
+        select.addClass('on');
+		con.eq(i).show();
+
+		e.preventDefault();
+	});
+}
+
 $(document).on("touchstart", function(){ });
 
 $(".btn_menu").click(function(){
@@ -213,6 +248,23 @@ $(document).ready(function() {
 		keyImgBox.slideUp();
 		$(this)
 			.next(".img_box:hidden")
+			.slideDown();
+		if ($(this).hasClass("on")) {
+			$(this).toggleClass("on");
+		} else {
+			$(this)
+				.addClass("on")
+				.siblings()
+				.removeClass("on");
+		}
+		e.preventDefault();
+	});
+
+	faqsubmu.hide();
+	faqtit.on("click", function(e) {
+		$(".answer:visible").slideUp();
+		$(this)
+			.next(".answer:hidden")
 			.slideDown();
 		if ($(this).hasClass("on")) {
 			$(this).toggleClass("on");

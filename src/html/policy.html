@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>KSmall</title>
+<meta charset="utf-8">
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta property="og:title" content="KSmall" />
+<meta property="og:description" content="" />
+<meta property="og:image" content="" /> <!-- 이미지 경로 삽입 -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="shortcut icon" href="../image/favicon.ico">
+<link rel="icon" sizes="16x16" href="../image/favicon-16.png">
+<link rel="icon" sizes="32x32" href="../image/favicon-32.png">
+<link rel="apple-touch-icon-precomposed" href="../image/favicon-152.png">
+<link rel="stylesheet" type="text/css" href="../css/slick.css" />
+<link rel="stylesheet" type="text/css" href="../css/lightbox.css" />
+<link rel="stylesheet" type="text/css" href="../css/ui.css" />
+</head>
+<body>
+<!-- 상단영역 -->
+<div class="header_area">
+    <div class="header">
+        <h1 class="t_logo"><a href="#">로고</a></h1>
+        <button type="button" name="button" class="btn_menu">왼쪽 메뉴</button>
+        <button type="button" name="button" class="btn_sch">홈 이동</button>
+    </div>
+</div>
+<!-- //상단영역 -->
+<!-- 왼쪽 메뉴 -->
+<div class="left_area">
+    <div class="left">
+		<div class="left_top_util"> <!-- 로그인 후 : login_after 클래스 추가 -->
+			<div class="btn_util">
+				<div class="user"><span>케이에스몰 담당자</span>님</div>
+				<div class="right">
+					<div><a href="#" class="btn orange">로그인</a></div> <!-- 로그인 시 텍스트만 교체 -->
+					<div><a href="#" class="btn gray">회원가입</a></div> <!-- 로그인 시 텍스트만 교체 -->
+				</div>
+			</div>
+			<a href="#" class="btn_left_close">메뉴 닫기</a>
+		</div>
+		<ul class="left_top_menu">
+			<li><a href="#">회원정보 <span>&gt;</span></a></li>
+			<li><a href="#">장바구니 <span>&gt;</span></a></li>
+			<li><a href="#">주문/배송조회 <span>&gt;</span></a></li>
+			<li><a href="#">결제이용방법안내 <span>&gt;</span></a></li>
+		</ul>
+		<div class="section">
+			<h2 class="f_orange">PRODUCT MENU</h2>
+			<ul class="menu_list product_menu">
+				<li class="menu1"><a href="#">베스트 상품보기</a></li>
+				<li class="menu2"></li>
+				<li class="menu3"></li>
+				<li class="menu4"><a href="#">유선단말기</a></li>
+				<li class="menu5"><a href="#">무선단말기</a></li>
+				<li class="menu6"><a href="#">정유사단말기</a></li>
+				<li class="menu7"><a href="#">외식 POS</a></li>
+				<li class="menu8"><a href="#">유통 POS</a></li>
+				<li class="menu9"></li>
+				<li class="menu10"><a href="#">부가장비</a></li>
+				<li class="menu11"><a href="#">기타장비</a></li>
+				<li class="menu12"><a href="#">제휴상품</a></li>
+				<li class="menu13"><a href="#">MD 기획</a></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<div class="section">
+			<h2>대리점업무</h2>
+			<ul class="menu_list agency">
+				<li class="menu1"><a href="#">프로젝트주문</a></li>
+				<li class="menu2"><a href="#">인수확인서조회</a></li>
+			</ul>
+		</div>
+		<div class="section last">
+			<h2>고객지원</h2>
+			<ul class="menu_list noti">
+				<li class="menu1"><a href="#">공지사항</a></li>
+				<li class="menu2"><a href="#">FAQ</a></li>
+				<li class="menu3"><a href="#">제조사 A/S 정보</a></li>
+			</ul>
+		</div>
+		<div class="link">
+			<a href="#" class="btn orange">KSNET IMS바로가기</a>
+		</div>
+    </div>
+</div>
+<!-- //왼쪽 메뉴 -->
+<!-- 검색 영역 -->
+<div class="right_area">
+	<div class="right">
+		<div class="sch_top">
+			<a href="#" class="btn_right_close">메뉴 닫기</a>
+		</div>
+		<div class="sch_box">
+			<input type="text" name="" id="" class="inpt" placeholder="제품을 검색하세요." />
+		</div>
+		<div class="recommendation_area">
+			<p class="txt">고객님 이런 제품은 어떠세요?</p>
+			<div class="slider recommendation_slider">
+				<div>
+					<a href="#">
+						<span class="box"><img src="../image/product/default.jpg" alt="이미지1"></span>
+						<span class="txt">DKSDK-S230</span>
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<span class="box"><img src="../image/product/default.jpg" alt="이미지2"></span>
+						<span class="txt">DKSDK-S230</span>
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<span class="box"><img src="../image/product/product1.jpg" alt="이미지3"></span>
+						<span class="txt">DKSDK-S230</span>
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<span class="box"><img src="../image/product/product2.jpg" alt="이미지4"></span>
+						<span class="txt">DKSDK-S230</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //검색 영역 -->
+<!-- 컨텐츠 -->
+<div class="contents_area">
+    <div class="contents sub_contents">
+		<div class="comm_sub_top">
+			<button type="button" class="back_history">이전 페이지 이동</button>
+			<h2 class="tit bg_input">개인정보처리방침</h2>
+		</div>
+
+		<!-- 개인정보처리방침 -->
+		<div class="policy_area">
+			<!-- 조회영역 -->
+			<div class="policy_sch_box">
+				<div class="sel_area">
+					<select name="" id="policy">
+						<option value="policy_2019">개인정보처리방침</option>
+						<option value="policy_2017">개인정보처리방침 2017년 11월 10일 이전내용</option>
+					</select>
+				</div>
+			</div>
+			<!-- //조회영역 -->
+			
+			<!-- 2019 개인정보처리방침 -->
+			<div class="policy_box" id="policy_2019">
+				<div class="txt">
+					주식회사 케이에스넷(이하 ‘회사’)은 ‘정보통신망 이용촉진 및 정보 보호 등에 관한 법률’, ‘개인정보보호법’, ‘신용정보의 이용 및 보호에 관한 <br/>
+					법률’ 등 개인정보와 관련된 법령상의 개인정보보호규정을 준수하고 있습니다.  <br/>
+					회사는 아래와 같이 개인정보 처리방침을 명시하여 이용자가 회사에 제공한 개인정보가 어떠한 용도와 방식으로 이용되고 있으며 <br/> 
+					개인정보보호를 위해 어떠한 조치를 취하는지 알려드립니다.  <br/>
+					회사 개인정보처리방침은 정부의 법률 및 지침의 변경과 회사 내부 정책 변화에 따라 변경될 수 있습니다. <br/> 
+					회사 홈페이지 방문 시 수시로 확인하시기 바랍니다.
+				</div>
+
+				<div class="section">
+					<h3 class="tit">1.개인정보의 수집 및 이용 목적</h3>
+					<div class="">
+						회사는 서비스 별 계약자 확인, 매출 거래 확인, 사용료 과금 확인 등의 목적으로 이용자의 개인정보를 수집합니다. <br/>
+						또한, 설문조사나 이벤트 시에 집단적인 통계분석을 위해서나 경품발송을 위한 목적으로도 개인정보 기재를 요청할 수 있습니다. 이때에도 기입하신 정보는 해당서비스 제공이나 이용자가 사전에 밝힌 목적 이외의 다른 어떠한 목적으로도 사용되지 않음을 알려드립니다.
+					</div>
+				</div>
+				
+				<div class="section">
+					<h3 class="tit">2.수집하는 개인정보 항목 및 수집방법</h3>
+					<div>
+						회사는 최초 계약 및 회원가입을 하실 때 서비스 제공을 위해 법령이 허용하는 가장 필수적인 개인정보를 받고 있습니다. <br/>- 개인정보 수집방법 : 홈페이지, 서면양식, 팩스, 전화, 상담 게시판, 이메일, 이벤트 응모
+					</div>
+					<div class="tbl_area">
+						<table class="tbl_col">
+							<thead>
+								<tr>
+									<th style="width: 25%;">서비스</th>
+									<th style="width: auto;">개인정보항목</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Ksmall</td>
+									<td>필수 : ID, 비밀번호, 계약자명, 이메일주소 , 연락처, 휴대폰, 주소, 사인이미지</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			
+				<div class="section">
+					<h3 class="tit">3.개인정보 제공</h3>
+					<div class="">
+						회사는 이용자의 개인정보를 원칙적으로 외부에 제공하지 않습니다. 다만, 아래의 경우에는 예외로 합니다. <br/>
+						- 이용자들이 사전에 동의한 경우<br/>
+						- 법령의 규정에 의거하거나, 수사 목적으로 법령에 정해진 절차와 방법에 따라 수사기관의 요구가 있는 경우<br/>
+					</div>
+
+					<h4>[제3자 제공]</h4>
+					<p class="desc">회사는 아래와 같이 이용자로부터 수집한 개인정보를 제3자에게 제공 합니다.</p>
+					<div class="tbl_area">
+						<table class="tbl_col">
+							<thead>
+								<tr>
+									<th style="width: 25%;">제공목적</th>
+									<th style="width: auto;">제공받는 자</th>
+									<th style="width: 25%;">제공정보</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>신용카드 결제</td>
+									<td>전카드사, 직불 카드 및 현금 IC처리 전 은행, (사)금융결제원, (주)한국스마트 카드</td>
+									<td>거래정보</td>
+								</tr>
+								<tr>
+									<td>계좌이체 결제</td>
+									<td>전 은행, 전 증권사, (사)금융결제원</td>
+									<td>거래정보</td>
+								</tr>
+								<tr>
+									<td>가상계좌 결제</td>
+									<td>전 은행, 케이아이비넷(주), 세틀뱅크(주)</td>
+									<td>거래정보</td>
+								</tr>
+								<tr>
+									<td>현금영수증 발행</td>
+									<td>국세청</td>
+									<td>거래정보, 휴대폰 정보카드 번호, 고유식별 정보</td>
+								</tr>
+								<tr>
+									<td>휴대폰 결제</td>
+									<td>㈜다날, ㈜모빌리언스, ㈜다우기술</td>
+									<td>거래 정보</td>
+								</tr>
+								<tr>
+									<td>휴대폰 인증</td>
+									<td>㈜다날, ㈜모빌리언스, 인포뱅크㈜, ㈜LG유플러스</td>
+									<td>이름, 생년월일, 휴대폰 번호</td>
+								</tr>
+								<tr>
+									<td>실명 인증</td>
+									<td>한국신용평가㈜, 한국신용정보㈜</td>
+									<td>이름, 생년월일</td>
+								</tr>
+								<tr>
+									<td>계좌 실명 인증</td>
+									<td>전 은행</td>
+									<td>계좌 정보</td>
+								</tr>
+								<tr>
+									<td>상품권</td>
+									<td>한국문화진흥, 한국도서보급, 해피머니아이앤씨, 아이앤플레이</td>
+									<td>인증 정보</td>
+								</tr>
+								<tr>
+									<td>포인트</td>
+									<td>전 카드사</td>
+									<td>거래 정보</td>
+								</tr>
+								<tr>
+									<td>단말기 발주</td>
+									<td>POS 제조사</td>
+									<td>발주정보</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+				<div class="section">
+					<h3 class="tit">4.개인정보의 보유 및 이용기간</h3>
+					<div class="">
+						회사는 원칙적으로 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체 없이 파기합니다. <br/>
+						단, 다음의 정보에 대해서는 아래의 이유로 명시한 기간동안 보존합니다.
+					</div>
+
+					<h4>[관련법령에 의한 정보보유]</h4>
+
+					<div class="tbl_area">
+						<table class="tbl_col">
+							<thead>
+								<tr>
+									<th style="width: 30%;">법률</th>
+									<th style="width: auto;">보존정보</th>
+									<th style="width: 15%;">보존기간</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td rowspan="3">전자금융거래법</td>
+									<td>건당 1만원 초과 전자금융거래에 관한 기록</td>
+									<td>5년</td>
+								</tr>
+								<tr>
+									<td>건당 1만원 이하 전자금융거래에 관한 기록</td>
+									<td>1년</td>
+								</tr>
+								<tr>
+									<td>전자금융거래에 관한 보조 기록</td>
+									<td>3년</td>
+								</tr>
+								<tr>
+									<td rowspan="3">전자상거래 등에서의 소비자보호에 관한 법률</td>
+									<td>계약 또는 청약 철회 등에 관한 기록</td>
+									<td>5년</td>
+								</tr>
+								<tr>
+									<td>대금결제 및 재화 등의 공급에 관한 기록</td>
+									<td>5년</td>
+								</tr>
+								<tr>
+									<td>소비자의 불만 또는 분쟁 처리에 관한 기록</td>
+									<td>3년</td>
+								</tr>
+								<tr>
+									<td>신용정보의 이용 및 보호에 관한 법률</td>
+									<td>신용정보의 수집/처리 및 이용 등에 관한 기록</td>
+									<td>3년</td>
+								</tr>
+								<tr>
+									<td rowspan="2" class="bor_bottom_no">정보통신 이용 촉진 및 정보보호등에 관한 법률</td>
+									<td>본인확인에 대한 기록</td>
+									<td>6개월</td>
+								</tr>
+								<tr>
+									<td>문의하기 내역</td>
+									<td>6개월</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+				<div class="section">
+					<h3 class="tit">5.개인정보의 파기절차 및 파기방법</h3>
+
+					<p>① 파기절차</p>
+					<div class="desc">
+						이용자가 회원가입 등을 위해 입력하신 정보는 이용목적이 달성된 후 내부방침 및 기타관련 법령에 의한 정보보호 사유에 따라 (보유 및 이용기간 참조) 일정기간 저장된 후 파기 됩니다. 동 개인정보는 법률에 의한 경우가 아니고서는 보전되는 이외의 다른 목적으로 이용되지 않습니다. <br/>
+						부가서비스를 1년 동안 이용하지 않는 이용자의 개인정보 중 서비스 재이용을 위해 필요한 최소한의 식별정보는 다른 이용자의 개인정보와 분리되어 별도로 저장‧관리되며, 서비스를 마지막으로 이용한 시점에서 1년이 경과되면 파기됩니다. 단 개인정보를 별도로 저장‧관리하는 경우에는 관계법령에 특별한 규정이 있는 경우를 제외하고는 해당 개인정보를 이용하거나 제공하지 않습니다.
+					</div>
+					<p class="num_desc">② 파기방법</p>
+					<div class="desc">종이(인쇄물, 서면 등)에 출력된 개인정보는 분쇄기로 분쇄 하거나 소각을 통하여 파기하고 전자적 파일 형태로 저장된 개인정보는 복원이 불가능한 방법으로 영구 삭제합니다.</div>
+				</div>
+
+				<div class="section">
+					<h3 class="tit">6.이용자 및 법정대리인의 권리와 그 행사방법</h3>
+
+					<div>
+						이용자는 언제든지 등록되어 있는 케이에스넷 회원관리에서 개인정보, 식별정보를 열람하거나 정정하실 수 있으며, 탈퇴를 요청하실 수 있습니다. 이용자는 개인 정보의 열람, 정정, 삭제는 케이에스넷의 회원관리에서 하실 수 있습니다. <br/><br/>
+						개인정보, 식별정보와 관련하여 불만이나 의견이 있으신 분은 개인정보 관리담당자에게 메일 (<a href="mailto:privacy@ksnet.co.kr">privacy@ksnet.co.kr</a>) 또는 전화(1544-6030)로 의견을 주시면 접수 즉시 조치하고 처리결과를 통보해 드리겠습니다.
+					</div>
+				</div>
+
+				<div class="section">
+					<h3 class="tit">7.개인정보 자동 수집 장치의 설치/운영 및 거부에 관한 사항</h3>
+
+					<p>① 쿠키 (cookie)의 운용 및 활용</p>
+					<div class="desc">이용자의 정보를 수시로 저장하고 찾아내는 '쿠키(cookie)'을 설치 운용 합니다. 쿠키란 회사의 웹사이트를 운영하는데 이용되는 서버가 이용자의 브라우저에 보내는 작은 텍스트 파일로서 이용자의 컴퓨터 하드디스크에 저장됩니다. 회사는 다음과 같은 목적을 위해 쿠키 등을 사용합니다.</div>
+					<p class="num_desc">② 쿠키 사용목적</p>
+					<div class="desc">회원 및 비회원들의 케이에스넷 사이트의 이용 빈도나 전체이용자 수, 이용형태를 파악함으로써이용자에게 더 유용하고 적합한 서비스를 제공하기 위해 사용합니다. 또한, 기타이벤트나 설문조사에서 이용자의 참여경력을 확인하기 위해서 쿠키를 이용하게 됩니다.</div>
+					<p class="num_desc">③ 쿠키의 설치/운영 및 거부</p>
+					<div class="desc">이용자는 쿠키 설치에 대한 선택권을 가지고 있습니다. 따 라서 이용자는 웹브라우저에서 옵션을 설정함으로써 모든 쿠키를 허용하거나, 쿠키가 저장될 때마다 확인을 거치거나, 아니면 모든 쿠키의 저장을 거부할 수도 있습니다. 다만, 쿠키의 저장을 거부할 경우에는 로그인이 필요한 일부 서비스는 이용에 어려움이 있을 수 있습니다.</div>
+				</div>
+
+				<div class="section">
+					<h3 class="tit">8.개인정보의 안정성 확보조치</h3>
+
+					<p>회사는 개인정보의 안정성 확보를 위해 아래와 같은 조치를 취하고 있습니다.</p>
+
+					<p class="num_desc">① 관리적 조치</p>
+					<div class="desc">내부관리계획 수립 및 시행, 직원 및 종업원 등에 대한 정기적 교육</div>
+					<p class="num_desc">② 기술적 조치</p>
+					<div class="desc">
+						개인정보를 처리할 때 개인정보가 분실, 도난, 유출, 위조, 변조 또는 훼손되지 않도록 다음과 같은 기술적 대책을 마련하여 개인정보의 안전성을 확보하고 있습니다. <br/>
+						- 국내 법령이 요구하는 수준의 암호화 저장 또는 네트워크상 개인정보를 전송해야 할 경우 암호화(SSL 등) 기술적용<br/>
+						- 백신 프로그램을 이용하여 컴퓨터 바이러스에 의한 피해를 방지하기 위한 조치<br/>
+						- 해킹 등 외부 침입에 대비하여 각 서버마다 침입차단 및 침입방지시스템 등을 적용
+					</div>
+					<p class="num_desc">③ 물리적 조치</p>
+					<div class="desc">개인정보가 저장 및 보관 된 장소의 시건, 출입통제 등</div>
+				</div>
+
+				<div class="section">
+					<h3 class="tit">9.개인정보관리 책임자 및 담당자의 연락처</h3>
+					<div>
+						이용자의 개인정보를 보호하고 개인정보와 관련한 불만을 처리하기 위하여 회사에서는 개인정보관리책임자 및 담당자를 두고 있습니다. <br/>
+						개인정보와 관련한 문의사항이 있으시면 아래의 개인정보관리책임자 및 담당자에게 연락 주시기바랍니다.<br/>
+						이용자의 문의 사항에 신속하고 성실하게 답변해드리겠습니다.
+					</div>
+					<div class="tbl_area">
+						<table class="tbl_col">
+							<thead>
+								<tr>
+									<th style="width: 50%;">개인정보보호 책임자</th>
+									<th style="width: auto;">개인정보보호 담당자</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<div>
+											성명 : 조용호 <br/>
+											직책 : 상무<br/>
+											소속 : 주식회사 케이에스넷<br/>
+											이메일 : <a href="mailto:privacy@ksnet.co.kr">privacy@ksnet.co.kr</a><br/>
+											전화번호 : 1544-6030<br/>
+											팩스번호 : 02-3420-6303
+										</div>
+									</td>
+									<td>
+										<div>
+											성명 : 양현우<br/>
+											직책 : 부장<br/>
+											소속 : 주식회사 케이에스넷<br/>
+											이메일 : <a href="mailto:privacy@ksnet.co.kr">privacy@ksnet.co.kr</a> <br/>
+											전화번호 : 1544-6030<br/>
+											팩스번호 : 02-3420-6303
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+				</div>
+
+				<div class="section">
+					<h3 class="tit">10.권익침해 구제방법</h3>
+
+					<p>이용자는 개인정보침해로 인한 구제를 받기 위하여 아래기관에 신고, 상담, 분쟁해결 등을 신청할 수 있습니다.</p>
+
+					<p class="num_desc">a. 개인정보분쟁조정위원회 (<a href="http://www.kopico.go.kr">www.kopico.go.kr</a> / 02-2100-2499)</p>
+					<p class="desc">b. 개인정보침해신고센터 (<a href="http://privacy.kisa.or.kr">privacy.kisa.or.kr</a> / 118)</p>
+					<p class="desc">c. 대검찰청 사이버범죄수사단 (<a href="http://www.spo.go.kr">www.spo.go.kr</a> / 02-3480-3571)</p>
+					<p class="desc">d. 경찰청 사이버안전국 (<a href="http://cyberbureau.police.go.kr">cyberbureau.police.go.kr</a> / 182)</p>
+				</div>
+
+				<div class="section">
+					<h3 class="tit">11.고지의 의무</h3>
+					<p>현 개인정보처리방침의 내용추가, 삭제 및 수정이 있을 경우에는 회사 홈페이지의 '고객지원'>'공지사항'을 통해 공지합니다.</p>
+					<p class="desc">① 공고일자 : 2017년 11월 10일</p>
+					<p class="desc">② 시행일자 : 2017년 11월 13일</p>
+				</div>
+
+			</div>
+			<!-- //2019 개인정보처리방침 -->
+
+			<!-- 2017 개인정보처리방침 -->
+			<div class="policy_box" id="policy_2017">
+				<div class="txt">
+					주식회사 케이에스넷은 ‘정보통신망 이용촉진 및 정보 보호등에 관한 법률’, ‘개인 정보보호법’등 개인정보와 관련된 법령상의 개인정보보호규정을 준수하고 있습니다. <br/>
+					회사는 아래와 같이 개인정보 취급방침을 명시하여 이용자가 회사에 제공한 개인정보가 어떠한 용도와 방식으로 이용되고 있으며 개인정보보호를 위해 어떠한 조치를 취하는지 알려드립니다.<br/>
+					회사 개인정보취급방침은 정부의 법률 및 지침의 변경과 회사 내부 정책 변화에 따라 변경될 수 있습니다. 회사 홈페이지 방문 시 수시로 확인하시기 바랍니다.
+				</div>
+
+				<div class="section">
+					<h3 class="tit">1.개인정보의 수집 및 이용 목적</h3>
+					<div class="">
+						회사는 서비스 별 계약자 확인, 매출 거래 확인, 사용료 과금 확인을 목적으로 이용자의 개인정보를 수집합니다. <br/>
+						또한 설문조사나 이벤트 시에 집단적인 통계분석을 위해서나 경품발송을 위한 목적으로도 개인정보 기재를 요청할 수 있습니다. 이때에도 기입하신 정보는 해당서비스 제공이나 이용자가 사전에 밝힌 목적 이외의 다른 어떠한 목적으로도 사용되지 않음을 알려드립니다.
+					</div>
+				</div>
+				
+				<div class="section">
+					<h3 class="tit">2.수집하는 개인정보 항목 및 수집방법</h3>
+					<div>
+						회사는 최초 계약 및 회원가입을 하실 때 서비스 제공을 위해 법령이 허용하는 가장 필수적인 개인정보를 받고 있습니다. <br/>
+						- 개인정보 수집방법 : 홈페이지, 서면양식, 팩스, 전화, 상담 게시판, 이메일, 이벤트 응모
+					</div>
+					<div class="tbl_area">
+						<table class="tbl_col">
+							<thead>
+								<tr>
+									<th style="width: 25%;">서비스</th>
+									<th style="width: auto;">개인정보항목</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Ksmall</td>
+									<td>계약자명, 이메일주소, 연락처</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			
+				<div class="section">
+					<h3 class="tit">3.개인정보의 보유 및 이용기간</h3>
+					<div class="">
+						회사는 원칙적으로 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체 없이 파기합니다. <br/>
+						단, 다음의 정보에 대해서는 아래의 이유로 명시한 기간동안 보존합니다.
+					</div>
+
+					<h4>[관련법령에 의한 정보보유]</h4>
+
+					<div class="tbl_area">
+						<table class="tbl_col">
+							<thead>
+								<tr>
+									<th style="width: 30%;">법률</th>
+									<th style="width: auto;">보존정보</th>
+									<th style="width: 15%;">보존기간</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>전자금융거래법</td>
+									<td>전자금융거래에 관한 기록</td>
+									<td>5년</td>
+								</tr>
+								<tr>
+									<td>전자상거래 등에서의 소비자보호에 관한 법률</td>
+									<td>계약 또는 청약 철회 등에 관한 기록</td>
+									<td>5년</td>
+								</tr>
+								<tr>
+									<td>전자상거래 등에서의 소비자보호에 관한 법률</td>
+									<td>대금결제 및 재화 등의 공급에 관한 기록</td>
+									<td>5년</td>
+								</tr>
+								<tr>
+									<td>전자상거래 등에서의 소비자보호에 관한 법률</td>
+									<td>소비자의 불만 또는 분쟁 처리에 관한 기록</td>
+									<td>3년</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+				<div class="section">
+					<h3 class="tit">4.개인정보의 파기절차 및 파기방법</h3>
+
+					<p>[파기절차]</p>
+					<div class="desc">
+						이용자가 회원가입 등을 위해 입력하신 정보는 이용목적이 달성된 후 내부방침 및 기타관련 법령에 의한 정보보호 사유에 따라 (보유 및 이용기간 참조) 일정기간 저장된 후 파기 됩니다. <br/>
+						동개인정보는 법률에 의한 경우가 아니고서는 보전되는 이외의 다른 목적으로 이용되지 않습니다.
+					</div><br/><br/>
+					<p>[파기방법]</p>
+					<div class="desc">
+						종이(인쇄물, 서면등)에 출력된 개인정보는 분쇄기로 분쇄 하거나 소각을 통하여 파기하고 전자적파일 형태로 저장된 개인정보는 복원이 불가능한 방법으로 영구 삭제합니다.
+					</div>
+				</div>
+
+				<div class="section">
+					<h3 class="tit">5.개인정보의 제공</h3>
+
+					<div>
+						회사는 이용자의 개인정보를 원칙적으로 외부에 제공하지 않습니다. 다만, 아래의 경우에는 예외로 합니다. <br/>
+						- 이용자들이 사전에 동의한 경우
+					</div>
+
+					<h4>[제 3자 제공]</h4>
+					<p>회사는 아래와 같이 이용자로부터 수집한 개인정보를 제3자에게 제공 합니다.</p>
+					<div class="tbl_area">
+						<table class="tbl_col">
+							<thead>
+								<tr>
+									<th style="width: 30%;">제공 목적</th>
+									<th style="width: auto;">제 3자</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>단말기 발주</td>
+									<td>POS 제조사</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<p>- 법령의 규정에 의거하거나, 수사 목적으로 법령에 정해진 절차와 방법에 따라 수사기관의 요구가 있는 경우</p>
+					
+				</div>
+
+				<div class="section">
+					<h3 class="tit">6.개인정보 취급 위탁</h3>
+					<p>회사는 이용자의 동의 없이 이용자의 개인정보를 외부 업체에 위탁하지 않습니다. 하단의 업체는 이용자에게 사전 동의를 얻어 위탁 업무를 대행하고 있습니다.</p>
+
+					<div class="tbl_area">
+						<table class="tbl_col">
+							<thead>
+								<tr>
+									<th style="width: 30%;">구분</th>
+									<th style="width: auto;">위탁업무</th>
+									<th style="width: 15%;">제공정보</th>
+									<th style="width: 15%;">수탁업체</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>VAN 서비스 <br/>부가서비스</td>
+									<td>가맹점유치 및 관리, 개통, AS, 품질관리, DDC 매출전표의 공급, 수거, 이관 업무, DDC 매출전표의 전산등록 및 검증 업무, sign-pad의 설치 및 유지보수 업무, 단말기 관리 의무, 서비스소개</td>
+									<td>가맹점 관리 정보</td>
+									<td>대리점</td>
+								</tr>
+								<tr>
+									<td>고객센터(공통)</td>
+									<td>고객 민원처리</td>
+									<td>민원 처리전반정보 <br/>(매출, 거래정보)</td>
+									<td>㈜에스엔제이 네트웍스</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+				<div class="section">
+					<h3 class="tit">7.이용자 및 법정대리인의 권리와 그 행사방법</h3>
+
+					<div>이용자는 언제든지 등록되어 있는 케이에스넷 회원관리에서 개인정보, 식별정보를 열람하거나 정정하실 수 있으며 , 탈퇴를 요청하실 수 있습니다. 이용자는 개인 정보의 열람, 정정, 삭제는 케이에스넷의 회원관리에서 하실 수 있습니다.</div>
+					<div class="desc">개인정보, 식별정보와 관련하여 불만이나 의견이 있으신 분은 개인정보 관리담당자에게 메일 (privacy@ksnet.co.kr) 또는 전화(1544-6030)로 의견을 주시면 접수 즉시 조치하고 처리결과를 통보해 드리겠습니다.</div>
+					
+				</div>
+
+				<div class="section">
+					<h3 class="tit">8.개인정보 자동 수집 장치의 설치/운영 및 거부에 관한 사항</h3>
+					<h4>- 쿠키 (cookie)의 운용 및 활용</h4>
+					<div>이용자의 정보를 수시로 저장하고 찾아내는 '쿠키(cookie)'을 설치 운용 합니다. 쿠키란 회사의 웹사이트를 운영하는데 이용되는 서버가 이용자의 브라우저에 보내는 작은 텍스트 파일로서 이용자의 컴퓨터 하드디스크에 저장됩니다. 회사는 다음과 같은 목적을 위해 쿠키 등을 사용합니다.</div>
+					<h4>- 쿠키 사용목적</h4>
+					<div>회원 및 비회원들의 케이에스넷 사이트의 이용 빈도나 전체이용자 수, 이용형태를 파악함으로써이용자에게 더 유용하고 적합한 서비스를 제공하기 위해 사용합니다. 또한, 기타이벤트나 설문조사에서 이용자의 참여경력을 확인하기 위해서 쿠키를 이용하게 됩니다.</div>
+					<h4>- 쿠키의 설치/운영 및 거부</h4>
+					<div>이용자는 쿠키 설치에 대한 선택권을 가지고 있습니다. 따 라서 이용자는 웹브라우저에서 옵션을 설정함으로써 모든 쿠키를 허용하거나, 쿠키가 저장될 때마다 확인을 거치거나, 아니면 모든 쿠키의 저장을 거부할 수도 있습니다. 다만, 쿠키의 저장을 거부할 경우에는 로그인이 필요한 일부 서비스는 이용에 어려움이 있을 수 있습니다.</div>
+				</div>
+
+				<div class="section">
+					<h3 class="tit">9.개인정보관리 책임자 및 담당자의 연락처</h3>
+
+					<div class="desc">
+						이용자의 개인정보를 보호하고 개인정보와 관련한 불만을 처리하기 위하여 회사에서는 개인정보관리책임자 및 담당자를 두고 있습니다. <br/>
+						개인정보와 관련한 문의사항이 있으시면 아래의 개인정보관리책임자 및 담당자에게 연락 주시기바랍니다.<br/>
+						이용자의 문의 사항에 신속하고 성실하게 답변해드리겠습니다.
+					</div>
+
+					<div class="tbl_area">
+						<table class="tbl_col">
+							<thead>
+								<tr>
+									<th style="width: 50%;">개인정보보호 책임자</th>
+									<th style="width: auto;">개인정보보호 담당자</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<div>
+											성명 : 조용호 <br/>
+											직책 : 상무<br/>
+											소속 : 주식회사 케이에스넷<br/>
+											이메일 : <a href="mailto:privacy@ksnet.co.kr">privacy@ksnet.co.kr</a><br/>
+											전화번호 : 1544-6030<br/>
+											팩스번호 : 02-3420-6303
+										</div>
+									</td>
+									<td>
+										<div>
+											성명 : 양현우<br/>
+											직책 : 차장<br/>
+											소속 : 주식회사 케이에스넷<br/>
+											이메일 : <a href="mailto:privacy@ksnet.co.kr">privacy@ksnet.co.kr</a> <br/>
+											전화번호 : 1544-6030<br/>
+											팩스번호 : 02-3420-6303
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<p class="desc">기타 개인정보침해에 대한 신고나 상담이 필요하신 경우에는 아래 기관에 문의하시기 바랍니다.</p>
+					<p class="desc">2. 개인정보침해신고센터 (<a href="http://privacy.kisa.or.kr">privacy.kisa.or.kr</a> / 118)</p>
+					<p class="desc">3. 대검찰청 사이버범죄수사단 (<a href="http://www.spo.go.kr">www.spo.go.kr</a> / 02-3480-3571)</p>
+					<p class="desc">d. 경찰청 사이버안전국 (<a href="http://cyberbureau.police.go.kr">cyberbureau.police.go.kr</a> / 182)</p>
+				</div>
+
+				<div class="section">
+					<h3 class="tit">10.고지의 의무</h3>
+					<p>현 개인정보취급방침의 내용추가, 삭제 및 수정이 있을 경우에는 회사 홈페이지의 'KSNET 소식’을 통해 고지합니다.</p>
+				</div>
+
+			</div>
+			<!-- //2017 개인정보처리방침 -->
+
+		</div>
+		<!-- //개인정보처리방침 -->
+
+	</div>
+</div>
+<!-- //컨텐츠 -->
+<div class="go_top_area">
+	<a href="#" class="go_top">top</a>
+</div>
+<!-- 하단영역 -->
+<div class="footer_area">
+    <div class="footer">
+        <ul class="footer_menu">
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#" class="bold">개인정보처리방침</a></li>
+			<li><a href="#">고객상담</a></li>
+            <li><a href="#">현대차주문</a></li>
+		</ul>
+
+		<div class="comm_select">
+			<select name="" id="">
+				<option value="">관련사이트 바로가기</option>
+				<option value="">사이트1</option>
+				<option value="">사이트2</option>
+			</select>
+		</div>
+
+		<ul class="info">
+			<li>■ 주소 : 서울시 강남구 삼성동 테헤란로 103길 9 삼성동 제일빌딩 3층</li>
+			<li>■ 통신판매업 신고번호 : 강남 제 241호 부가통신 신고번호 : 192</li>
+			<li>■ 사업자등록번호 : 120-81-97322 개인정보관리책임 : KSNET 담당자 ㈜ KSNET 대표자</li>
+			<li>■ 고객상담 <a href="tel:1544-4700">1544.4700</a> E-MAIL <a href="mailto:ksmall@ksnet.co.kr">ksmall@ksnet.co.kr</a></li>
+			<li>Copyright©2008 KSNET INC, All rights reserved.</li>
+		</ul>
+    </div>
+</div>
+<!-- //하단영역 -->
+<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery-migrate-3.1.0.min.js"></script>
+<script type="text/javascript" src="../js/jquery-ui-1.12.1.min.js"></script>
+<script type="text/javascript" src="../js/slick.min.js"></script>
+<script type="text/javascript" src="../js/lightbox.min.js"></script>
+<script type="text/javascript" src="../js/ui.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#policy').change(function(){
+		$('.policy_box').hide();
+		$('#' + $(this).val()).show();
+	});
+});
+</script>
+</body>
+</html>

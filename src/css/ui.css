@@ -2384,23 +2384,23 @@ table .state.ok {
 	border-top: 0;
 	overflow: auto;
 }
-.signup_area .signup_terms_box * {
+.signup_area .signup_terms_box * , .policy_box * {
 	font-size: 0.7rem;
 	line-height: 1.2;
 	color: #000;
 }
-.signup_area .signup_terms_box h4 {
+.signup_area .signup_terms_box h4 , .policy_box h4 {
 	margin-top: 1.5rem;
 }
-.signup_area .signup_terms_box p , .signup_area .signup_terms_box h3 {
+.signup_area .signup_terms_box p , .signup_area .signup_terms_box h3 , .policy_box h3 , .policy_box p {
 	margin-top: 1.5rem;
 	font-size: 0.9rem;
 	font-weight: 400;
 }
-.signup_area .signup_terms_box p {
+.signup_area .signup_terms_box p , .policy_box p {
 	font-size: 0.7rem;
 }
-.signup_area .signup_terms_box div {
+.signup_area .signup_terms_box div , .policy_box .desc {
 	margin-top: 0.7rem;
 }
 .signup_area .signup_terms_box .point {
@@ -2515,6 +2515,147 @@ table .state.ok {
 	width: 13.9rem;
 	max-width: inherit;
 }
+
+.company_area {
+	padding: 1rem 1rem 5rem;
+	background: #fff;
+}
+.company_area .greetings_tit {
+	margin-bottom: 1rem;
+	font-size: 1.1rem;
+	color: #000;
+}
+.company_area .greetings_txt {
+	padding-top: 1rem;
+	border-top: 0.1rem solid #fab000;
+	font-size: 0.8rem;
+	color: #000;
+}
+.company_area .company_explan_tit {
+	margin: 1rem 0;
+	font-size: 1.3rem;
+	font-weight: 500;
+	color: #1453be;
+	text-align: center;
+}
+.company_area .company_explan_box {
+	border: 0.2rem solid #92b2ff;
+}
+
+.policy_area , .faq_area {
+	padding-bottom: 5rem;
+	background: #fff;
+}
+.policy_area .policy_sch_box {
+	padding-top: 1.5rem;
+}
+.policy_area .policy_box h3 {
+	margin-bottom: 0.5rem;
+}
+.policy_area .policy_box .txt {
+	padding: 1rem 1rem 0;
+}
+.policy_box .section {
+	padding: 0 1rem 0.5rem;
+}
+.tbl_area table .bor_bottom_no {
+	border-bottom: 0;
+}
+#policy_2017 {
+    display: none;
+}
+
+.faq_area .faq_tab {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.5rem 1rem 1rem;
+	border-bottom: 0.1rem solid #3672da;
+}
+.faq_area .faq_tab li {
+	position: relative;
+	border: 0.1rem solid #fab000;
+	text-align: center;
+}
+.faq_area .faq_tab li a {
+	position: relative;
+	display: block;
+	width: 100%;
+	padding: 1rem 0.2rem;
+	font-size: 0.75rem;
+	font-weight: 500;
+	color: #000;
+}
+.faq_area .faq_tab li.on {
+	background: #3672da;
+	border-color: #3672da;
+}
+.faq_area .faq_tab li.on a {
+	color: #fff;
+}
+.faq_tab li.on a:after {
+    position: absolute;
+    bottom: -0.8rem;
+    left: 50%;
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0.4rem;
+    border-color: #3672da transparent transparent transparent;
+    margin-left: -0.3rem;
+}
+.faq_tab_con .con_box {
+	padding: 0 1.5rem;
+}
+.faq_tab_con .con_box .question {
+    position: relative;
+    padding: 0.9rem 2.75rem 0.9rem 1.75rem;
+    border-bottom: 0.1rem solid #cbcbcb;
+    font-size: 0.9rem;
+    color: #000;
+    overflow: hidden;
+    cursor: pointer;
+}
+.faq_tab_con .con_box .question span {
+    position: absolute;
+    top: 0.9rem;
+    left: 0.75rem;
+    font-size: 0.9rem;
+    color: #000;
+}
+.faq_tab_con .con_box .answer {
+    padding: 1.2rem 1.8rem;
+    border-bottom: 0.1rem solid #cbcbcb;
+    font-size: 0.9rem;
+	color: #000;
+	word-break: break-all;
+}
+.faq_tab_con .con_box .question.on {
+    background: #eae9e9;
+}
+.faq_tab_con .con_box .question:after {
+    content: '▼';
+    position: absolute;
+    top: 50%;
+    right: 0.9rem;
+    width: 0.8rem;
+	height: 0.8rem;
+	padding: 0;
+	margin-top: -0.4rem;
+	font-size: 0.6rem;
+	color: #000;
+	line-height: 1;
+	text-align: center;
+}
+.faq_tab_con .con_box .question.on:after {
+	content: '▲';
+}
+
+
+
+
 
 
 
