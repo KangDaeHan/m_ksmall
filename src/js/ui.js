@@ -62,7 +62,7 @@ function tab(e, num){
         select = $(this);
         i = $(this).index();
 
-		$('.terms_area .btn_area').css('border-top','2px solid #fab000');
+		$('.terms_area .btn_area').css('border-top','0.2rem solid #fab000');
         select.addClass('on');
 		con.eq(i).show();
 

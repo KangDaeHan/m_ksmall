@@ -2384,7 +2384,7 @@ table .state.ok {
 	border-top: 0;
 	overflow: auto;
 }
-.signup_area .signup_terms_box * , .policy_box * {
+.signup_area .signup_terms_box * , .policy_box * , .terms * {
 	font-size: 0.7rem;
 	line-height: 1.2;
 	color: #000;
@@ -2392,7 +2392,7 @@ table .state.ok {
 .signup_area .signup_terms_box h4 , .policy_box h4 {
 	margin-top: 1.5rem;
 }
-.signup_area .signup_terms_box p , .signup_area .signup_terms_box h3 , .policy_box h3 , .policy_box p {
+.signup_area .signup_terms_box p , .signup_area .signup_terms_box h3 , .policy_box h3 , .policy_box p , .terms .section .tit {
 	margin-top: 1.5rem;
 	font-size: 0.9rem;
 	font-weight: 400;
@@ -2542,7 +2542,7 @@ table .state.ok {
 	border: 0.2rem solid #92b2ff;
 }
 
-.policy_area , .faq_area {
+.policy_area , .faq_area , .comm_content_area , .terms_area {
 	padding-bottom: 5rem;
 	background: #fff;
 }
@@ -2653,11 +2653,38 @@ table .state.ok {
 	content: '▲';
 }
 
-
-
-
-
-
+.terms_area {
+	padding: 1rem 1rem 5rem;
+}
+.terms_area .terms_tab li a {
+	font-size: 1rem;
+	color: #000;
+}
+.terms_area .terms_tab li.on a {
+	color: #f38f00;
+}
+.terms_area .terms_tab {
+	margin-bottom: 1.5rem;
+}
+.terms_area .terms_tab_con {
+	padding: 0 1rem;
+	border-top: 0.2rem solid #fab000;
+}
+.terms_area .terms .section {
+	padding-bottom: 1.5rem;
+}
+.terms_area .terms .section .desc {
+	margin-top: 0.5rem;
+}
+.terms .section .tit {
+	margin-bottom: 0.5rem;
+}
+.terms_area .btn_area {
+	padding-top: 1.5rem;
+}
+.terms_area .btn_area .btn {
+	margin: 0 auto;
+}
 
 
 
