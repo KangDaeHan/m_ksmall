@@ -18,6 +18,11 @@ function moreView(el){
 	});
 }
 
+function scrollMove(seq){
+	var offset = $("#" + seq).offset();
+	$('html, body').animate({scrollTop : offset.top}, 400);
+}
+
 function expandCollapse(id , el) {
 	var list_box = $("." + id);
 

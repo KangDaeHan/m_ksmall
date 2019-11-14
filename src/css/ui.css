@@ -1852,6 +1852,7 @@ select , .sel_area select {
 .tbl_row th , .tbl_row td {
 	padding: 0.8rem 1.25rem;
 	border: 0.1rem solid #040404;
+	font-size: 1.1rem;
 	text-align: left;
 }
 .tbl_row .inpt {
@@ -2685,6 +2686,160 @@ table .state.ok {
 .terms_area .btn_area .btn {
 	margin: 0 auto;
 }
+
+.customer_menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+}
+.customer_menu li {
+	margin-left: 0.5rem;
+}
+.customer_menu li:first-child {
+	margin: 0;
+}
+.customer_menu li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 0.3rem 0.5rem;
+	border: 0.1rem solid #fab000;
+	font-size: 0.9rem;
+	line-height: 1.1;
+	color: #5a5a5a;
+}
+.customer_menu li a span {
+	font-size: 0.6rem;
+	color: #898888;
+}
+#agency_inquiry {
+    border-top: 0.2rem solid #fab000;
+}
+.customer_inquiry .tit {
+    position: relative;
+    display: block;
+    padding-left: 1.5rem;
+    margin: 1.5rem 0 1.5rem 1.5rem;
+    font-size: 1rem;
+    color: #000;
+    letter-spacing: -0.1rem;
+}
+.customer_inquiry .tit:before {
+	content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 0.9rem;
+    height: 0.9rem;
+    margin-top: -0.45rem;
+    background: #fab000;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.inquiry {
+	display: flex;
+    /* flex-direction: column; */
+    /* justify-content: space-around; */
+	align-items: flex-start;
+	flex-wrap: wrap;
+	padding: 0 1rem 0 0;
+    overflow: hidden;
+}
+.inquiry .box {
+	width: 9.2rem;
+    height: 8.9rem;
+	margin-left: 1.15rem;
+	word-break: break-all;
+}
+.inquiry .box .department {
+    padding: 0.45rem 0.25rem;
+    border: 0.1rem solid #fab000;
+    font-size: 0.9rem;
+    color: #000;
+    line-height: 1.2;
+    letter-spacing: -0.1rem;
+    text-align: center;
+}
+.inquiry .box p, .inquiry .box p a {
+    font-size: 0.7rem;
+    color: #000;
+    line-height: 1.2;
+    text-align: center;
+}
+.inquiry .box p {
+    margin-top: 0.35rem;
+}
+.customer_inquiry {
+    margin-top: 1.5rem;
+    border-top: 0.2rem solid #054fff;
+}
+.credit_card_inquiry .box .department {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 2.7rem;
+    border: 0.1rem solid #1453be;
+    color: #1453be;
+}
+.credit_card_inquiry .box {
+    width: 9.1rem;
+    height: 10rem;
+    margin-left: 1.15rem;
+}
+.customer_inquiry.bor_gray {
+    margin-top: 1.5rem;
+    border-color: #b5b5b5;
+}
+.customer_inquiry .name {
+    width: 12.25rem;
+	height: 2.75rem;
+	margin: 0 0 0.5rem 1rem;
+    border: 0.1rem solid #b5b5b5;
+    font-size: 0.9rem;
+    font-weight: 500;
+	color: #000;
+	line-height: 2.75rem;
+    text-align: center;
+}
+.customer_inquiry .section {
+    position: relative;
+    margin-top: 0.2rem;
+}
+.customer_inquiry .section .title {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0; */
+    width: 12.25rem;
+	height: 2.75rem;
+	margin-left: 1rem;
+    border: 0.1rem solid #b5b5b5;
+    background: #efefef;
+    font-size: 1rem;
+	font-weight: 500;
+	line-height: 2.75rem;
+    color: #000;
+    text-align: center;
+}
+.tbl_layout_auto {
+	table-layout: auto;
+}
+.customer_inquiry .tbl_area {
+	padding: 0.5rem 1rem 1.5rem;
+}
+.customer_inquiry .tbl_row th , .customer_inquiry .tbl_row td {
+	padding: 0.5rem;
+}
+.customer_inquiry .tbl_row th {
+	text-align: center;
+}
+
 
 
 
