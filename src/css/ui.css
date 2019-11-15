@@ -2004,6 +2004,9 @@ table .t_center {
 .pd15 {
 	padding: 1.5rem 0;
 }
+.pdt15 {
+	padding-top: 1.5rem;
+}
 .acknowledgment_list .tbl_mult:first-child {
 	margin: 0;
 }
@@ -2242,7 +2245,7 @@ table .state.ok {
 	background: #fff;
 	padding: 2.25rem 0;
 }
-.login_area .icon {
+.login_area .icon , .pop_signup .icon {
 	display: block;
 	width: 4.85rem;
 	height: 4.95rem;
@@ -2809,13 +2812,6 @@ table .state.ok {
     margin-top: 0.2rem;
 }
 .customer_inquiry .section .title {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    left: 0; */
     width: 12.25rem;
 	height: 2.75rem;
 	margin-left: 1rem;
@@ -2839,10 +2835,141 @@ table .state.ok {
 .customer_inquiry .tbl_row th {
 	text-align: center;
 }
+.tbl_tfoot td input {
+	border: 0.1rem solid #666;
+}
+.tbl_tfoot tfoot tr:first-child th , .tbl_tfoot tfoot tr:first-child td {
+	border-top: 0.2rem solid #040404;
+}
+.tbl_tfoot tfoot tr:last-child th , .tbl_tfoot tfoot tr:last-child td {
+	border-bottom: 0.2rem solid #040404;
+}
+.mr0 {
+	margin: 0 auto !important;
+}
+.bg_transparent {
+	background: transparent;
+}
+.inpt.bor_line {
+	width: 100%;
+    height: 2.45rem;
+    padding: 0 0.7rem;
+    border-radius: 0.3rem;
+    background: #dcdada;
+    border: 0.1rem solid #646161;
+    line-height: 2.45rem;
+    overflow: hidden;
+}
+.bg_gray select {
+	width: 100%;
+	height: 2.45rem;
+	border-radius: 0.3rem;
+	background: #dcdada url("../image/bl_arrow_up3.png") no-repeat right 50%;
+	background-size: contain;
+}
+.btn_area .btn_post {
+	width: 100%;
+	margin: 0 auto;
+}
 
+.ly .bg {
+	position:absolute; 
+	top:0; 
+	left:0; 
+	width:100%; 
+	height:100%; 
+	background:#000; 
+	opacity:.5; 
+	filter:alpha(opacity=50);
+}
+.ly .pop_wrap {
+	display:block;
+	position: absolute;
+	top: 50%;
+	left: 50%; 
+	width: 90%;
+	background: #fff;
+}
+.ly .pop_header {
+	position: relative;
+	padding: 0 1.5rem;
+	background: #e5791f;
+}
+.ly .pop_header .tit {
+	display: inline-block;
+	font-size: 1.5rem;
+	font-weight: 500;
+	color: #fff;
+	line-height: 3rem;
+	vertical-align: middle;
+}
+.ly .pop_content {
+	padding: 0.7rem 0.5rem;
+}
+.ly .pop_header .btn_close {
+	position: absolute;
+	top: 50%;
+	right: 1rem;
+	width: 1.35rem;
+	height: 1.3rem;
+	margin-top: -0.65rem;
+	background-position: -14.5rem -1.1rem;
+	text-indent: -9999rem;
+	overflow: hidden;
+}
+.ly .pop_footer {
+	text-align: center;
+}
+.pop_signup .pop_content {
+	padding: 2.45rem 1rem;
+}
+.pop_signup .icon {
+	margin: 0 auto;
+}
+.pop_signup .signup_complete {
+	margin: 1.75rem 0 0;
+	font-size: 1.5rem;
+	color: #000;
+	text-align: center;
+}
 
-
-
+.tbl_disable .inpt , .tbl_modify .inpt {
+	width: 100%;
+    height: 2.45rem;
+    padding: 0 0.7rem;
+    border-radius: 0.3rem;
+    background: #dcdada;
+    border: 0.1rem solid #646161;
+    line-height: 2.45rem;
+    overflow: hidden;
+}
+.tbl_modify .inpt {
+	background: #fff;
+}
+.tbl_modify select {
+	width: 100%;
+	height: 2.45rem;
+	border-radius: 0.3rem;
+	border: 0.1rem solid #646161;
+}
+.pw_show {
+	position: relative;
+}
+.pw_show .hide , .pw_show .show {
+	position: absolute;
+	top: 50%;
+	right: 0.7rem;
+	width: 1.9rem;
+	height: 1.9rem;
+	margin-top: -0.95rem;
+	background-position: -16.8rem -19.35rem;
+	text-indent: -9999rem;
+	overflow: hidden;
+	z-index: 10;
+}
+.pw_show .show {
+	background-position: -16.8rem -16.6rem;
+}
 
 /* 가로모드 */
 @media all and (orientation:landscape) {
