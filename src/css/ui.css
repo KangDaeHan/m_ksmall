@@ -2836,6 +2836,7 @@ table .state.ok {
 	text-align: center;
 }
 .tbl_tfoot td input {
+	width: 11.5rem;
 	border: 0.1rem solid #666;
 }
 .tbl_tfoot tfoot tr:first-child th , .tbl_tfoot tfoot tr:first-child td {
