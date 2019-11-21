@@ -3010,6 +3010,9 @@ table .state.ok {
 	color: #040404;
 	text-align: right;
 }
+.pop_wrap .t_left {
+	text-align: left;
+}
 
 
 /* 가로모드 */

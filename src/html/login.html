@@ -36,7 +36,7 @@
 			<div class="btn_util">
 				<div class="user"><span>케이에스몰 담당자</span>님</div>
 				<div class="right">
-					<div><a href="#" class="btn orange">로그인</a></div> <!-- 로그인 시 텍스트만 교체 -->
+					<div><a href="#" class="btn orange" onclick="layer_open('pwd_change'); return false;">로그인</a></div> <!-- 로그인 시 텍스트만 교체 : 비밀번호 변경 안내 팝업 포함 -->
 					<div><a href="#" class="btn gray">회원가입</a></div> <!-- 로그인 시 텍스트만 교체 -->
 				</div>
 			</div>
@@ -219,6 +219,32 @@
     </div>
 </div>
 <!-- //하단영역 -->
+<!-- 휴먼계정 팝업 -->
+<div class="ly" id="pwd_change">
+	<div class="bg"></div>
+	<div class="pop_wrap pop_signup">
+		<!-- 팝업 내용 -->
+		<div class="pop_header">
+			<h2 class="tit">비밀번호 변경 안내</h2>
+			<button type="button" class="sprite btn_close">팝업닫기</button>
+		</div>
+		<div class="pop_content">
+			<div class="signup_complete t_left mr0">
+				안전한 사용자 정보를 위해 주기적인 비밀번호 변경이 필요합니다.<br/>
+				3개월동안 비밀번호 변경이 없었습니다. <br/><br/>
+
+				비밀번호를 변경 하시겠습니까?
+			</div>
+		</div>
+		<div class="pop_footer">
+			<div class="btn_area">
+				<a href="#" class="btn blue btn_close">확인</a>
+			</div>
+		</div>
+		<!-- //팝업 내용 -->
+	</div>
+</div>
+<!-- //휴먼계정 팝업 -->
 <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="../js/jquery-migrate-3.1.0.min.js"></script>
 <script type="text/javascript" src="../js/jquery-ui-1.12.1.min.js"></script>
