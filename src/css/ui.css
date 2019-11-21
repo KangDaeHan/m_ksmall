@@ -3013,6 +3013,11 @@ table .state.ok {
 .pop_wrap .t_left {
 	text-align: left;
 }
+.pop_account_activation .icon {
+	width: 4.95rem;
+	height: 4.95rem;
+	background-position: -20.7rem -16.5rem;
+}
 
 
 /* 가로모드 */
