@@ -36,7 +36,7 @@
 			<div class="btn_util">
 				<div class="user"><span>케이에스몰 담당자</span>님</div>
 				<div class="right">
-					<div><a href="#" class="btn orange">로그인</a></div> <!-- 로그인 시 텍스트만 교체 -->
+					<div><a href="#" class="btn orange" onclick="layer_open('pop_account_activation'); return false;">로그인</a></div> <!-- 로그인 시 텍스트만 교체 -->
 					<div><a href="#" class="btn gray">회원가입</a></div> <!-- 로그인 시 텍스트만 교체 -->
 				</div>
 			</div>
@@ -249,6 +249,30 @@
     </div>
 </div>
 <!-- //하단영역 -->
+
+<!-- 휴먼계정 팝업 -->
+<div class="ly" id="pop_account_activation">
+	<div class="bg"></div>
+	<div class="pop_wrap pop_signup">
+		<!-- 팝업 내용 -->
+		<div class="pop_header">
+			<h2 class="tit">휴면계정알림</h2>
+			<button type="button" class="sprite btn_close">팝업닫기</button>
+		</div>
+		<div class="pop_content">
+			<div class="signup_complete">
+				해당 계정은 휴면상태로 로그인이 불가능합니다.
+			</div>
+		</div>
+		<div class="pop_footer">
+			<div class="btn_area">
+				<a href="#" class="btn blue btn_close">확인</a>
+			</div>
+		</div>
+		<!-- //팝업 내용 -->
+	</div>
+</div>
+<!-- //휴먼계정 팝업 -->
 <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="../js/jquery-migrate-3.1.0.min.js"></script>
 <script type="text/javascript" src="../js/jquery-ui-1.12.1.min.js"></script>
