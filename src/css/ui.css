@@ -627,9 +627,6 @@ input[type="checkbox"]:checked {
 	color: #000;
 	letter-spacing: -0.1rem;
 }
-.left_area .left .section .agency li {
-	width: 50%;
-}
 .left_area .left .section .agency li a {
 	padding-left: 6.3rem;
 }
@@ -637,7 +634,7 @@ input[type="checkbox"]:checked {
 	padding-left: 4.7rem;
 }
 .left_area .left .section .noti .menu2 a {
-	padding-left: 5.75rem;
+	padding-left: 4.7rem;
 }
 .left_area .left .section .noti .menu3 a {
 	padding-left: 3.5rem;
@@ -694,12 +691,12 @@ input[type="checkbox"]:checked {
 	background-position: -23.7rem -3.55rem;
 }
 .left_area .left .section .noti .menu1 a:before {
-	left: 1.9rem;
-	background-position: -27.2rem -3.5rem;
+    left: 1.9rem;
+	background-position: -20.15rem -3.5rem;
 }
 .left_area .left .section .noti .menu2 a:before {
-	left: 3rem;
-	background-position: -30.55rem -3.5rem;
+    left: 1.9rem;
+	background-position: -27.2rem -3.5rem;
 }
 .left_area .left .section .noti .menu3 a:before {
 	left: 0.8rem;
@@ -1035,7 +1032,7 @@ select , .sel_area select {
 	background-position: -27.2rem -7.5rem;
 }
 .comm_bn_area .menu_service2 {
-	margin: 1.5rem 0.2rem 0 0.2rem;
+	margin: 0 0.2rem 0 0.2rem;
 	border-top: 0.05rem solid #000;
 	border-left: 0.05rem solid #000;
 	overflow: hidden;
