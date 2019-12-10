@@ -36,7 +36,7 @@
 			<div class="btn_util">
 				<div class="user"><span>케이에스몰 담당자</span>님</div>
 				<div class="right">
-					<div><a href="#" class="btn orange" onclick="layer_open('pwd_change'); return false;">로그인</a></div> <!-- 로그인 시 텍스트만 교체 : 비밀번호 변경 안내 팝업 포함 -->
+					<div><a href="#" class="btn orange" onclick="layer_open('pop_account_activation'); return false;">로그인</a></div> <!-- 로그인 시 텍스트만 교체 -->
 					<div><a href="#" class="btn gray">회원가입</a></div> <!-- 로그인 시 텍스트만 교체 -->
 				</div>
 			</div>
@@ -68,19 +68,12 @@
 				<li></li>
 			</ul>
 		</div>
-		<div class="section">
-			<h2>대리점업무</h2>
-			<ul class="menu_list agency">
-				<li class="menu1"><a href="#">프로젝트주문</a></li>
-				<li class="menu2"><a href="#">인수확인서조회</a></li>
-			</ul>
-		</div>
 		<div class="section last">
-			<h2>고객지원</h2>
-			<ul class="menu_list noti">
-				<li class="menu1"><a href="#">공지사항</a></li>
-				<li class="menu2"><a href="#">FAQ</a></li>
-				<li class="menu3"><a href="#">제조사 A/S 정보</a></li>
+			<h2>고객업무지원</h2>
+			<ul class="menu_list agency noti">
+				<li class="menu1"><a href="#">프로젝트주문</a></li>
+                <li class="menu2"><a href="#">공지사항</a></li>
+                <li class="menu3"><a href="#">제조사 A/S 정보</a></li>
 			</ul>
 		</div>
 		<div class="link">
@@ -139,25 +132,15 @@
 		</div>
 
 		<div class="login_area">
-			<div class="sprite icon"></div>
-			<div class="comm_noti">회원로그인</div>
+			<div class="login_top">
+                <img src="../image/login_top.jpg" alt="로그인 상단 이미지">
+            </div>
 
-			<div class="keyboard_box">
-				<div class="keyboard">
-					<a href="#" class="kr_keyboard">한글자판</a>
-					<div class="img_box">
-						<img src="../image/keyboard1.png" alt="">
-					</div>
-					<a href="#" class="special_keyboard">특수문자</a>
-					<div class="img_box">
-						<img src="../image/keyboard2.png" alt="">
-					</div>
-				</div>
-			</div>
-			
 			<div class="login_box">
+                <p>아이디</p>
 				<input type="text" name="" id="" class="inpt" placeholder="아이디를 입력해 주세요" />
-				<input type="password" name="" id="" class="inpt" placeholder="패스워드를 입력해 주세요" />
+                <p>패스워드</p>
+                <input type="password" name="" id="" class="inpt" placeholder="패스워드를 입력해 주세요" />
 				<ul class="chk_list">
 					<li>
 						<input type="checkbox" name="" id="continuation" />
@@ -173,12 +156,11 @@
 				</div>
 
 				<div class="login_etc">
-					<a href="#">아이디 찾기</a>
-					<a href="#">비밀번호 찾기</a>
+					<a href="#">아이디(비밀번호) 찾기</a>
 				</div>
 				
 				<div class="btn_area">
-					<a href="#" class="btn blue">회원가입</a>
+					<a href="#" class="btn orange">회원가입</a>
 				</div>
 			</div>
 
@@ -198,7 +180,6 @@
             <li><a href="#">이용약관</a></li>
             <li><a href="#" class="bold">개인정보처리방침</a></li>
 			<li><a href="#">고객상담</a></li>
-            <li><a href="#">현대차주문</a></li>
 		</ul>
 
 		<div class="comm_select">
@@ -246,6 +227,12 @@
 	</div>
 </div>
 <!-- //비밀번호 변경 안내 팝업 -->
+
+<!-- 페이지 로딩 -->
+<div class="loading">
+	<img src="../image/loader.gif" alt="">
+</div>
+<!-- //페이지 로딩 -->
 <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="../js/jquery-migrate-3.1.0.min.js"></script>
 <script type="text/javascript" src="../js/jquery-ui-1.12.1.min.js"></script>
