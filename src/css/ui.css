@@ -2391,7 +2391,6 @@ table .state.ok {
 }
 .login_area .id_find dl dt {
 	width: 6.75rem;
-
 	text-align: center;
 }
 .login_area .id_find dl dd {
@@ -3085,7 +3084,7 @@ table .state.ok {
 	height: 0;
 }
 
-.slider {
+.switch_toggle .slider {
 	position: absolute;
 	cursor: pointer;
 	top: 0;
@@ -3097,7 +3096,7 @@ table .state.ok {
 	transition: .4s;
 }
 
-.slider:before {
+.switch_toggle .slider:before {
 	position: absolute;
 	content: "";
 	height: 1.2rem;
@@ -3109,22 +3108,22 @@ table .state.ok {
 	transition: .4s;
 }
 
-input:checked + .slider {
+.switch_toggle input:checked + .slider {
 	background-color: #185da9;
 }
 
-input:checked + .slider:before {
+.switch_toggle input:checked + .slider:before {
 	-webkit-transform: translateX(1.775rem);
 	-ms-transform: translateX(1.775rem);
 	transform: translateX(1.775rem);
 }
 
 /* Rounded sliders */
-.slider.round {
+.switch_toggle .slider.round {
 	border-radius: 1.5rem;
 }
 
-.slider.round:before {
+.switch_toggle .slider.round:before {
 	border-radius: 50%;
 }
 

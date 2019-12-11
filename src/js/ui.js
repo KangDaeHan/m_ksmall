@@ -49,8 +49,6 @@ function tab(e, num){
     var con = $(e+'_con').children();
     var select = $(menu).eq(num);
 	var i = num;
-	var serviceType = this.value;
-	// var st = $("input:radio[name=id_pw_find]:checked").val();
 
     select.addClass('on');
 	con.hide();
