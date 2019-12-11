@@ -68,19 +68,12 @@
 				<li></li>
 			</ul>
 		</div>
-		<div class="section">
-			<h2>대리점업무</h2>
-			<ul class="menu_list agency">
-				<li class="menu1"><a href="#">프로젝트주문</a></li>
-				<li class="menu2"><a href="#">인수확인서조회</a></li>
-			</ul>
-		</div>
 		<div class="section last">
-			<h2>고객지원</h2>
-			<ul class="menu_list noti">
-				<li class="menu1"><a href="#">공지사항</a></li>
-				<li class="menu2"><a href="#">FAQ</a></li>
-				<li class="menu3"><a href="#">제조사 A/S 정보</a></li>
+			<h2>고객업무지원</h2>
+			<ul class="menu_list agency noti">
+				<li class="menu1"><a href="#">프로젝트주문</a></li>
+                <li class="menu2"><a href="#">공지사항</a></li>
+                <li class="menu3"><a href="#">제조사 A/S 정보</a></li>
 			</ul>
 		</div>
 		<div class="link">
@@ -139,13 +132,12 @@
 		</div>
 
 		<div class="login_area">
-			<div class="sprite icon"></div>
 			<div class="comm_noti">아이디와 패스워드를 잊어버리셨어요?</div>
 
 			<div class="login_box id_find_box">
-				<ul class="rd_choice">
+				<ul class="rd_choice id_pw">
 					<li>
-						<input type="radio" name="id_pw_find" id="id_find" checked/>
+						<input type="radio" name="id_pw_find" id="id_find"/>
 						<label for="id_find">아이디 찾기</label>
 					</li>
 					<li>
@@ -153,36 +145,51 @@
 						<label for="pw_find">패스워드 찾기</label>
 					</li>
 				</ul>
+				
+				<div class="id_pw_con">
+					<!-- 아이디 찾기 -->
+					<div class="id_find">
+						<dl>
+							<dt>대리점명</dt>
+							<dd><input type="text" name="" id="" class="inpt"/></dd>
+						</dl>
+						<dl>
+							<dt>연락처</dt>
+							<dd><input type="text" name="" id="" class="inpt"/></dd>
+						</dl>
 
-				<div class="id_find">
-					<dl>
-						<dt>대리점명</dt>
-						<dd><input type="text" name="" id="" class="inpt"/></dd>
-					</dl>
+						<div class="btn_area">
+							<a href="#" class="btn orange" onclick="layer_open('pop_id'); return false;">아이디 찾기</a>
+							<a href="#" class="btn blue">닫기</a>
+						</div>
+					</div>
+					<!-- //아이디 찾기 -->
+
 					<!-- 패스워드 찾기 -->
-					<!-- <dl>
-						<dt>이메일</dt>
-						<dd><input type="text" name="" id="" class="inpt"/></dd>
-					</dl> -->
+					<div class="id_find">
+						<dl>
+							<dt>대리점명</dt>
+							<dd><input type="text" name="" id="" class="inpt"/></dd>
+						</dl>
+						<dl>
+							<dt>이메일</dt>
+							<dd><input type="text" name="" id="" class="inpt"/></dd>
+						</dl>
+						<dl>
+							<dt>연락처</dt>
+							<dd><input type="text" name="" id="" class="inpt"/></dd>
+						</dl>
+
+						<div class="btn_area">
+							<a href="#" class="btn orange" onclick="layer_open('pop_pw'); return false;">패스워드 찾기</a>
+							<a href="#" class="btn blue">닫기</a>
+						</div>
+					</div>
 					<!-- //패스워드 찾기 -->
-					<dl>
-						<dt>연락처</dt>
-						<dd><input type="text" name="" id="" class="inpt"/></dd>
-					</dl>
 				</div>
 			</div>
-
-			<div class="find_id_pw">
-				등록된 아이디 : AD120000
-			</div>
-
-			<div class="btn_area">
-				<a href="#" class="btn orange">아이디 찾기</a>
-				<a href="#" class="btn blue">닫기</a>
-			</div>
-
+			
 		</div>
-
 	</div>
 </div>
 <!-- //컨텐츠 -->
@@ -197,7 +204,6 @@
             <li><a href="#">이용약관</a></li>
             <li><a href="#" class="bold">개인정보처리방침</a></li>
 			<li><a href="#">고객상담</a></li>
-            <li><a href="#">현대차주문</a></li>
 		</ul>
 
 		<div class="comm_select">
@@ -218,6 +224,52 @@
     </div>
 </div>
 <!-- //하단영역 -->
+
+<!-- 아이디/패스워드 팝업 -->
+<div class="ly" id="pop_id">
+	<div class="bg"></div>
+	<div class="pop_wrap pop_signup pop_id_pw">
+		<!-- 팝업 내용 -->
+		<div class="pop_header">
+			<h2 class="tit">등록된 아이디</h2>
+		</div>
+		<div class="pop_content">
+			<div class="signup_complete mr0">
+				AD1234567
+			</div>
+		</div>
+		<div class="pop_footer">
+			<div class="btn_area">
+				<a href="#" class="btn blue btn_close">확인</a>
+			</div>
+		</div>
+		<!-- //팝업 내용 -->
+	</div>
+</div>
+<!-- //아이디/패스워드 팝업 -->
+
+<!-- 아이디/패스워드 팝업 -->
+<div class="ly" id="pop_pw">
+	<div class="bg"></div>
+	<div class="pop_wrap pop_signup pop_id_pw">
+		<!-- 팝업 내용 -->
+		<div class="pop_header">
+			<h2 class="tit">등록된 패스워드</h2>
+		</div>
+		<div class="pop_content">
+			<div class="signup_complete mr0">
+				AD1234567
+			</div>
+		</div>
+		<div class="pop_footer">
+			<div class="btn_area">
+				<a href="#" class="btn blue btn_close">확인</a>
+			</div>
+		</div>
+		<!-- //팝업 내용 -->
+	</div>
+</div>
+<!-- //아이디/패스워드 팝업 -->
 <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="../js/jquery-migrate-3.1.0.min.js"></script>
 <script type="text/javascript" src="../js/jquery-ui-1.12.1.min.js"></script>
@@ -226,7 +278,7 @@
 <script type="text/javascript" src="../js/ui.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
-	
+	tab('.id_pw',0);
 });
 </script>
 </body>

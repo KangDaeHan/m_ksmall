@@ -49,25 +49,30 @@ function tab(e, num){
     var con = $(e+'_con').children();
     var select = $(menu).eq(num);
 	var i = num;
+	var serviceType = this.value;
+	// var st = $("input:radio[name=id_pw_find]:checked").val();
 
     select.addClass('on');
 	con.hide();
     con.eq(num).show();
 
 	$('.terms_area .btn_area').css('border','0');
-	
+
+	select.find('input:radio[name=id_pw_find]').prop( "checked", true );
+
     menu.click('a' , function(e){
         if(select!==null){
             select.removeClass("on");
 			con.hide();
 			faqsubmu.hide();
 			faqtit.removeClass('on');
-        }
+		}
 
         select = $(this);
         i = $(this).index();
-
+		
 		$('.terms_area .btn_area').css('border-top','0.2rem solid #fab000');
+		select.find('input:radio[name=id_pw_find]').prop( "checked", true );
         select.addClass('on');
 		con.eq(i).show();
 

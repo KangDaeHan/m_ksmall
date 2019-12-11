@@ -36,7 +36,7 @@
 			<div class="btn_util">
 				<div class="user"><span>케이에스몰 담당자</span>님</div>
 				<div class="right">
-					<div><a href="#" class="btn orange" onclick="layer_open('pop_account_activation'); return false;">로그인</a></div> <!-- 로그인 시 텍스트만 교체 -->
+					<div><a href="#" class="btn orange" onclick="layer_open('pwd_change'); return false;">로그인</a></div> <!-- 로그인 시 텍스트만 교체 -->
 					<div><a href="#" class="btn gray">회원가입</a></div> <!-- 로그인 시 텍스트만 교체 -->
 				</div>
 			</div>
@@ -137,20 +137,17 @@
             </div>
 
 			<div class="login_box">
-                <p>아이디</p>
+                <p class="login_tit">아이디</p>
 				<input type="text" name="" id="" class="inpt" placeholder="아이디를 입력해 주세요" />
-                <p>패스워드</p>
+                <p class="login_tit">패스워드</p>
                 <input type="password" name="" id="" class="inpt" placeholder="패스워드를 입력해 주세요" />
-				<ul class="chk_list">
-					<li>
-						<input type="checkbox" name="" id="continuation" />
-						<label for="continuation">로그인상태 유지</label>
-					</li>
-					<li>
-						<input type="checkbox" name="" id="id_save" />
-						<label for="id_save">아이디 저장</label>
-					</li>
-				</ul>
+				<div class="switch_toggle">
+					<label class="switch">
+						<input type="checkbox" name="" />
+						<span class="slider round"></span>
+					</label>
+					<span class="switch_txt">자동 로그인</span>
+				</div>
 				<div class="btn_area">
 					<a href="#" class="btn blue">로그인</a>
 				</div>
@@ -220,7 +217,7 @@
 		<div class="pop_footer">
 			<div class="btn_area">
 				<a href="#" class="btn blue btn_close">비밀번호 변경하기</a>
-				<a href="#" class="btn blue">다음에 변경</a>
+				<a href="#" class="btn orange">다음에 변경</a>
 			</div>
 		</div>
 		<!-- //팝업 내용 -->
