@@ -141,55 +141,51 @@
 		<div class="product_spec_area">
 			<div class="vat_txt">[VAT별도]</div>
 			<div class="tbl_area acknowledgment_list">
-				<table class="tbl_row bg_white tbl_mult tbl_tfoot">
+				<table class="tbl_row bg_white tbl_tfoot">
 					<tbody>
 						<tr>
-							<th style="width: 7.7rem;">모델명</th>
+							<th style="width: 9.7rem;">모델명</th>
 							<td>
 								KS12345(단품)
 							</td>
-							<th style="width: 7.7rem;">판매가격</th>
+                        </tr>
+                        <tr>
+                            <th>판매가격</th>
 							<td>
 								1,000,000
 							</td>
-						</tr>
-						<tr>
-							<th>프로젝트코드</th>
+                        </tr>
+                        <tr>
+                            <th>프로젝트코드</th>
 							<td>
 								DDV1000
 							</td>
+                        </tr>
+                        <tr>
+                            <th>프로젝트명</th>
+							<td>
+								일반판매
+							</td>
+                        </tr>
+						<tr>
 							<th>출고유형</th>
 							<td>
 								판매
 							</td>
 						</tr>
 						<tr>
-							<th>프로젝트명</th>
-							<td colspan="3">일반판매</td>
-						</tr>
-						<tr>
 							<th>주문처코드</th>
-							<td colspan="3">주문처코드</td>
-						</tr>
-						<tr>
-							<th>주문처</th>
-							<td>
-								주문처
-							</td>
-							<th>주문수량</th>
-							<td>
-								10
-							</td>
-						</tr>
+							<td>주문처코드</td>
+                        </tr>
 					</tbody>
 					<tfoot>
 						<tr>
 							<th>총주문수량</th>
-							<td colspan="3">1개</td>
+							<td>1개</td>
 						</tr>
 						<tr>
 							<th>금액합계</th>
-							<td colspan="3">
+							<td>
 								100,000원
 							</td>
 						</tr>
@@ -198,10 +194,10 @@
 			</div>
 
 			<div class="tbl_area acknowledgment_list">
-				<table class="tbl_row bg_white tbl_mult">
+				<table class="tbl_row bg_white tbl_layout_auto">
 					<tbody>
 						<tr>
-							<th style="width: 8.7rem;">인수처</th>
+							<th style="width: 6rem;">인수처</th>
 							<td>
 								D1234562 신세계 통신
 							</td>
@@ -214,54 +210,58 @@
 						</tr>
 						<tr>
 							<th>배송지 전화번호</th>
-							<td>저건약수정_HIT-15(SET)</td>
+							<td>010-1234-1234</td>
+                        </tr>
+                        <tr>
+							<th>배송지 우편번호</th>
+							<td>123456</td>
 						</tr>
 						<tr>
-							<th rowspan="2">배송지주소</th>
-							<td>123-123</td>
+							<th>배송지주소</th>
+							<td>서울시 서울구 서울로77 23-45</td>
 						</tr>
 						<tr>
-							<td>서울시 서울구 서울로 23-45</td>
-						</tr>
-						<tr>
-							<th rowspan="2">결제수단</th>
+							<th>결제수단</th>
 							<td>
-								<span class="mr10"><input type="radio" name="pay_method" id="pay_card" checked/> <label for="pay_card">신용카드</label></span>
-								<span class="mr10"><input type="radio" name="pay_method" id="virtual_account" /> <label for="virtual_account">가상계좌</label></span>
+								<span class="mr5"><input type="radio" name="pay_method" id="pay_card" checked/> <label for="pay_card">신용카드</label></span>
+								<span class="mr5"><input type="radio" name="pay_method" id="virtual_account" /> <label for="virtual_account">가상계좌</label></span>
 								<span><input type="radio" name="pay_method" id="etc" /> <label for="etc">기타</label></span>
 							</td>
-						</tr>
+                        </tr>
+                        <tr>
+							<th colspan="2" class="t_center">사용자 추가정보</th>
+                        </tr>
 						<tr>
-							<td>서울시 서울구 서울로 23-45</td>
-						</tr>
-						<tr>
-							<th rowspan="2">사용자 추가정보</th>
-							<td>
+                            <th class="bor_black" style="width: 9rem;">사용자 이메일주소</th>
+							<td class="bor_black">
 								<div class="user_add_info">
-									<span>사용자 이메일주소</span> 
 									<input type="text" name="" id="" />
 								</div>
+							</td>
+                        </tr>
+                        <tr>
+                            <th style="width: 9rem;">사용자 휴대폰번호</th>
+							<td>
 								<div class="user_add_info">
-									<span>사용자 휴대폰번호</span> 
 									<input type="text" name="" id="" />
 								</div>
 							</td>
 						</tr>
 						<tr>
-							<td>
+							<td colspan="2" class="t_center">
 								<input type="checkbox" name="" id="agree_policy" /> <label for="agree_policy">개인정보활용에 동의함</label>
 							</td>
 						</tr>
 					</tbody>
 				</table>
-
-				<div class="pd15">
-					<div class="btn_area">
-						<a href="#" class="btn blue">주문</a>
-						<a href="#" class="btn gray mr0">취소</a>
-					</div>
-				</div>
-			</div>
+            </div>
+            
+            <div class="pd15">
+                <div class="btn_area">
+                    <a href="#" class="btn blue">주문</a>
+                    <a href="#" class="btn gray mr0">취소</a>
+                </div>
+            </div>
 
 		</div>
 

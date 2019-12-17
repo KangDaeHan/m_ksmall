@@ -34,22 +34,33 @@
     <div class="left">
 		<div class="left_top_util"> <!-- 로그인 후 : login_after 클래스 추가 -->
 			<div class="btn_util">
-				<div class="user"><span>케이에스몰 담당자</span>님</div>
+				<div class="user"><span>케이에스몰 담당자</span> 님</div>
 				<div class="right">
 					<div><a href="#" class="btn orange">로그인</a></div> <!-- 로그인 시 텍스트만 교체 -->
-					<div><a href="#" class="btn gray">회원가입</a></div> <!-- 로그인 시 텍스트만 교체 -->
+					<div><a href="#" class="btn orange">ADMIN</a></div>
 				</div>
 			</div>
 			<a href="#" class="btn_left_close">메뉴 닫기</a>
 		</div>
 		<ul class="left_top_menu">
-			<li><a href="#">회원정보 <span>&gt;</span></a></li>
-			<li><a href="#">장바구니 <span>&gt;</span></a></li>
-			<li><a href="#">주문/배송조회 <span>&gt;</span></a></li>
-			<li><a href="#">결제이용방법안내 <span>&gt;</span></a></li>
-		</ul>
+			<li><a href="#">회원정보 <span></span></a></li>
+			<li><a href="#">장바구니 <span></span></a></li>
+			<li><a href="#">주문/배송<br/>조회 <span></span></a></li>
+			<li><a href="#">결제이용<br/>방법안내 <span></span></a></li>
+        </ul>
+
+        <!-- 관리자용 -->
+        <!-- <ul class="left_top_menu">
+			<li><a href="#">회원정보 <span></span></a></li>
+			<li><a href="#">장바구니 <span></span></a></li>
+			<li><a href="#">주문/배송<br/>조회 <span></span></a></li>
+            <li><a href="#">결제이용<br/>방법안내 <span></span></a></li>
+            <li><a href="#">주문확인 <span></span></a></li>
+        </ul> -->
+        <!-- //관리자용 -->
+        
 		<div class="section">
-			<h2 class="f_orange">PRODUCT MENU</h2>
+			<h2>PRODUCT MENU</h2>
 			<ul class="menu_list product_menu">
 				<li class="menu1"><a href="#">베스트 상품보기</a></li>
 				<li class="menu2"></li>
@@ -66,10 +77,31 @@
 				<li class="menu13"><a href="#">MD 기획</a></li>
 				<li></li>
 				<li></li>
-			</ul>
+            </ul>
+            
+            <!-- 차후 적용 예정 -->
+            <!-- <ul class="menu_list product_menu add_menu">
+				<li class="menu1"><a href="#">베스트 상품보기</a></li>
+				<li class="menu2"></li>
+				<li class="menu3"></li>
+				<li class="menu4"><a href="#">유선단말기</a></li>
+				<li class="menu5"><a href="#">무선단말기</a></li>
+				<li class="menu6"><a href="#">정유사단말기</a></li>
+				<li class="menu7"><a href="#">외식 POS</a></li>
+				<li class="menu8"><a href="#">유통 POS</a></li>
+				<li class="menu9"></li>
+				<li class="menu10"><a href="#">소모품</a></li>
+				<li class="menu11"><a href="#">서명패드</a></li>
+				<li class="menu12"><a href="#">리더기</a></li>
+				<li class="menu13"><a href="#">제휴상품</a></li>
+				<li class="menu14"><a href="#">솔루션</a></li>
+                <li></li>
+            </ul> -->
+            <!-- //차후 적용 예정 -->
+
 		</div>
 		<div class="section last">
-			<h2>고객업무지원</h2>
+			<h2 class="f_orange">고객업무지원</h2>
 			<ul class="menu_list agency noti">
 				<li class="menu1"><a href="#">프로젝트주문</a></li>
                 <li class="menu2"><a href="#">공지사항</a></li>
@@ -149,14 +181,16 @@
 				<div class="id_pw_con">
 					<!-- 아이디 찾기 -->
 					<div class="id_find">
-						<dl>
-							<dt>대리점명</dt>
-							<dd><input type="text" name="" id="" class="inpt"/></dd>
-						</dl>
-						<dl>
-							<dt>연락처</dt>
-							<dd><input type="text" name="" id="" class="inpt"/></dd>
-						</dl>
+                        <div class="box">
+                            <dl>
+                                <dt>대리점명:</dt>
+                                <dd><input type="text" name="" id="" class="inpt"/></dd>
+                            </dl>
+                            <dl>
+                                <dt>연락처:</dt>
+                                <dd><input type="text" name="" id="" class="inpt"/></dd>
+                            </dl>
+                        </div>
 
 						<div class="btn_area">
 							<a href="#" class="btn orange" onclick="layer_open('pop_id'); return false;">아이디 찾기</a>
@@ -167,18 +201,20 @@
 
 					<!-- 패스워드 찾기 -->
 					<div class="id_find">
-						<dl>
-							<dt>대리점명</dt>
-							<dd><input type="text" name="" id="" class="inpt"/></dd>
-						</dl>
-						<dl>
-							<dt>이메일</dt>
-							<dd><input type="text" name="" id="" class="inpt"/></dd>
-						</dl>
-						<dl>
-							<dt>연락처</dt>
-							<dd><input type="text" name="" id="" class="inpt"/></dd>
-						</dl>
+                        <div class="box">
+                            <dl>
+                                <dt>대리점명:</dt>
+                                <dd><input type="text" name="" id="" class="inpt"/></dd>
+                            </dl>
+                            <dl>
+                                <dt>이메일:</dt>
+                                <dd><input type="text" name="" id="" class="inpt"/></dd>
+                            </dl>
+                            <dl>
+                                <dt>연락처:</dt>
+                                <dd><input type="text" name="" id="" class="inpt"/></dd>
+                            </dl>
+                        </div>
 
 						<div class="btn_area">
 							<a href="#" class="btn orange" onclick="layer_open('pop_pw'); return false;">패스워드 찾기</a>

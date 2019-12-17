@@ -490,7 +490,7 @@ input[type="checkbox"]:checked {
 	width: 100%;
 	min-height: 100%;
 	height: 100%;
-	background: #e7e7e7;
+	background: #fff;
 	overflow: auto;
 	z-index: 100;
 	-webkit-user-select: none;
@@ -501,19 +501,10 @@ input[type="checkbox"]:checked {
 }
 
 .left_area .left .left_top_util {
-	position: relative;
-	padding: 0.85rem 3.3rem 0.85rem 1.15rem;
-	background: #fff;
-}
-.left_area .left .left_top_util .btn_util {
-	display: flex;
-	align-items: center;
-}
-.left_area .left .left_top_util .btn_util div {
-	margin-left: 0.5rem;
-}
-.left_area .left .left_top_util .btn_util div:first-child {
-	margin: 0;
+    position: relative;
+    height: 11.9rem;
+    padding: 1.45rem 3.3rem 0.85rem 1.5rem;
+    background: #09306e;
 }
 .left_area .left .left_top_util .btn_util .btn , .left_area .left .link .btn {
 	display: block;
@@ -547,20 +538,24 @@ input[type="checkbox"]:checked {
 	overflow: hidden;
 	text-indent: -9999rem;
 }
+.left_area .left .left_top_util .btn_left_close {
+    top: 1.2rem;
+    margin: 0;
+}
 .left_area .left .left_top_util .btn_util .user {
 	display: none;
 	font-size: 0.9rem;
-	color: #000;
+	color: #fff;
 }
 .left_area .left .left_top_util .btn_util .user span {
 	font-size: 0.9rem;
-	color: #ffae00;
 }
 .left_area .left .login_after .btn_util {
 	justify-content: space-between;
 }
 .left_area .left .login_after .btn_util .user {
-	display: block;
+    display: block;
+    margin-bottom: 1.25rem;
 }
 .left_area .left .left_top_util .btn_util .right , .left_area .left .login_after .btn_util .right {
 	display: table;
@@ -574,25 +569,55 @@ input[type="checkbox"]:checked {
 	padding: 0;
 }
 .left_area .left .left_top_menu {
-	display: flex;
-	justify-content: space-between;
-	padding: 1.4rem 1.2rem;
-	margin: 0.5rem 0.25rem;
-	background: #fff;
+    position: absolute;
+    top: 8.85rem;
+    left: 50%;
+    width: 28.95rem;
+    display: flex;
+    align-items: center;
+	padding: 0;
+    margin: 0 0 0 -14.475rem;
+    border-radius: 0.5rem;
+    background: #fff;
+    box-shadow: 0px 0.35rem 0px 0px rgba(216,216,216,1);
+    overflow: hidden;
+}
+.left_area .left .left_top_menu li {
+    width: 25%;
+    word-break: break-all;
 }
 .left_area .left .left_top_menu li a {
-	color: #000;
+    position: relative;
+    display: block;
+    padding: 1.4rem 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #5d6980;
+    text-align: center;
 }
 .left_area .left .left_top_menu li a span {
-	color: #7c7c7c;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: block;
+    width: 0.2rem;
+    height: 2.6rem;
+    margin: -1.3rem 0 0 0;
+    background: #e7e7e7;
+}
+.left_area .left .left_top_menu li:last-child a span {
+    display: none;
 }
 .left_area .left .section {
+    padding-top: 6.1rem;
 	padding-bottom: 1.65rem;
 	margin-bottom: 0.6rem;
 	background: #fff;
 }
 .left_area .left .section.last {
-	margin: 0;
+    margin: 0;
+    padding-top: 0;
 }
 .left_area .left .section h2 {
 	padding: 1rem;
@@ -608,22 +633,20 @@ input[type="checkbox"]:checked {
 	display: flex;
 	flex-wrap: wrap;
 	align-content: space-between;
-	border-top: 0.2rem solid #e7e7e7;
-	border-left: 0.2rem solid #e7e7e7;
+    border-top: 0.2rem solid #e7e7e7;
+    margin: 0 1.5rem;
 }
 .left_area .left .section .menu_list li {
 	width: 33.333%;
-	border: 0.2rem solid #e7e7e7;
-	border-left: 0;
-	border-top: 0;
+	border-bottom: 0.2rem solid #e7e7e7;
 }
 .left_area .left .section .menu_list li a {
 	position: relative;
 	display: block;
 	width: 100%;
 	height: 100%;
-	padding: 1rem 0.5rem 1rem 3.7rem;
-	font-size: 1rem;
+	padding: 1rem 0 1rem 3.5rem;
+	font-size: 0.9rem;
 	color: #000;
 	letter-spacing: -0.1rem;
 }
@@ -631,10 +654,10 @@ input[type="checkbox"]:checked {
 	padding-left: 6.3rem;
 }
 .left_area .left .section .noti .menu1 a {
-	padding-left: 4.7rem;
+	padding-left: 4.5rem;
 }
 .left_area .left .section .noti .menu2 a {
-	padding-left: 4.7rem;
+	padding-left: 4.5rem;
 }
 .left_area .left .section .noti .menu3 a {
 	padding-left: 3.5rem;
@@ -682,6 +705,29 @@ input[type="checkbox"]:checked {
 .left_area .left .section .product_menu .menu13 a:before {
 	background-position: -16.8rem -3.5rem;
 }
+.left_area .left .section .product_menu.add_menu .menu10 a:before {
+    width: 2.4rem;
+    height: 2.4rem;
+	background-position: -37.2rem -3.6rem;
+}
+.left_area .left .section .product_menu.add_menu .menu11 a:before {
+    width: 2.4rem;
+    height: 2.45rem;
+	background-position: -40.5rem -3.55rem;
+}
+.left_area .left .section .product_menu.add_menu .menu12 a:before {
+    width: 2.4rem;
+    height: 2.45rem;
+	background-position: -43.9rem -3.5rem;
+}
+.left_area .left .section .product_menu.add_menu .menu13 a:before {
+	background-position: -43.8rem -0.2rem;
+}
+.left_area .left .section .product_menu.add_menu .menu14 a:before {
+    width: 2.4rem;
+    height: 2.4rem;
+	background-position: -47.15rem -3.5rem;
+}
 .left_area .left .section .agency .menu1 a:before {
 	left: 3.5rem;
 	background-position: -20.15rem -3.5rem;
@@ -703,8 +749,8 @@ input[type="checkbox"]:checked {
 	background-position: -33.85rem -3.5rem;
 }
 .left_area .left .link {
-	padding: 2.6rem;
-	background: #d1d1d1;
+	padding: 1.4rem 2.6rem 2rem;
+	background: #fff;
 }
 .left_area .left .link .btn {
 	display: block;
@@ -1067,9 +1113,9 @@ select , .sel_area select {
 	vertical-align: middle;
 }
 .comm_bn_area .menu_service2 .menu1 a:before {
-	width: 1.55rem;
-	height: 1.6rem;
-	background-position: -34.5rem -7.3rem;
+	width: 1.9rem;
+	height: 1.75rem;
+	background-position: -16.85rem -10.95rem;
 }
 .comm_bn_area .menu_service2 .menu2 a:before {
 	width: 1.4rem;
@@ -1354,16 +1400,39 @@ select , .sel_area select {
 	margin-right: 0.4rem;
 	color: #7d7a7b;
 }
-.product_list li .info .price {
-	margin-bottom: 0.4rem;
-	font-size: 0.9rem;
+.product_list li .info .db_txt p {
+    display: inline-block;
+    margin-bottom: 0.4rem;
+    vertical-align: middle;
+}
+.product_list li .info .price , .product_list li .info .stock {
+    padding-right: 0.3rem;
+    font-size: 0.9rem;
 	font-weight: 600;
 	color: #505050;
+}
+.product_list li .info .stock {
+    position: relative;
+    padding: 0 0 0 0.5rem;
+    color: #000;
+}
+.product_list li .info .stock:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 0.2rem;
+    height: 0.7rem;
+    background: #d1d1d1;
+    margin-top: -0.35rem;
 }
 .product_list li .info .price em {
 	font-weight: 400;
 	font-size: 0.6rem;
 	color: #7d7a7b;
+}
+.product_list li .info .stock span {
+    color: #7d7a7b;
 }
 .product_list li .btns {
 	display: flex;
@@ -1758,7 +1827,7 @@ select , .sel_area select {
 	display: block;
 	width: 18rem;
 	height: 2.7rem;
-	margin: 0 auto 1.5rem;
+	margin: 0 auto 0.75rem;
 	background: #7c7c7c;
 	border-radius: 0.4rem;
 	font-size: 1.2rem;
@@ -1853,19 +1922,35 @@ select , .sel_area select {
 	color: #fff !important;
 }
 .tbl_area {
-	padding: 0.9rem;
+    margin: 0.9rem;
+    padding: 0 1.75rem;
+    background: #fff;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 0.35rem 0 rgba(177, 143, 143, 0.5);
+    overflow: hidden;
 }
 .tbl_row {
 	font-size: 1.2rem;
 	font-weight: 500;
 	color: #000;
-	word-break: break-all;
+    word-break: break-all;
 }
 .tbl_row th , .tbl_row td {
-	padding: 0.8rem 1.25rem;
-	border: 0.1rem solid #040404;
-	font-size: 1.1rem;
+	padding: 0.8rem 0;
+    border-top: 0.1rem solid #efefef;
+    font-size: 1.1rem;
+    color: #868686;
 	text-align: left;
+}
+.tbl_row td {
+    text-align: right;
+    color: #010101;
+}
+.tbl_row td .area input {
+    text-align: right;
+}
+.tbl_row tr:first-child th , .tbl_row tr:first-child td {
+    border: 0;
 }
 .tbl_row .inpt {
 	width: 100%;
@@ -1910,14 +1995,16 @@ select , .sel_area select {
 	line-height: 3rem;
 }
 .bg_tbl {
+    border-radius: 0;
 	background: #3962ae;
-	margin-bottom: 1.05rem;
+    margin: 0 0 1.05rem 0;
+    padding: 0.9rem;
 }
 .bg_tbl table {
 	background: #09306e;
 }
 .bg_tbl table th , .bg_tbl table td {
-	border-color: #cad4e4;
+    border: 0.1rem solid #cad4e4 !important;
 	color: #fff;
 	text-align: center;
 }
@@ -1925,7 +2012,11 @@ select , .sel_area select {
 	margin-top: -0.1rem;
 }
 .db_form .inpt {
-	margin: 0;
+    margin: 0;
+    text-align: right;
+}
+.db_form .inpt.t_left {
+    text-align: left;
 }
 .comm_sub_tit {
 	position: relative;
@@ -2000,9 +2091,10 @@ table .t_center {
 	line-height: 2rem;
 }
 .card_info {
-	padding: 0 1.45rem 2rem;
+	padding: 0;
 	font-size: 1.05rem;
-	color: #a6a6a6;
+    color: #a6a6a6;
+    text-align: left;
 }
 .chk_agree {
 	padding: 0.95rem 2.35rem;
@@ -2226,7 +2318,7 @@ table .state.ok {
 }
 .comm_noti {
 	margin: 0 1.05rem;
-	padding: 0.7rem 0.3rem;
+	padding: 1.85rem 0.3rem;
 	font-size: 1.5rem;
 	font-weight: 600;
 	color: #000;
@@ -2326,7 +2418,6 @@ table .state.ok {
 	height: 2.9rem;
 	padding: 0;
     border: 0;
-    border-bottom: 0.1rem solid #bcbcbc;
     color: #000;
 	line-height: 2.9rem;
 }
@@ -2362,8 +2453,11 @@ table .state.ok {
     border-bottom: 0.1rem solid #656565;
 }
 .login_area .id_find_box {
-	margin-top: 1rem;
-	padding: 1.7rem 0.35rem;
+	margin-top: 0;
+	padding: 0 1rem 1.7rem;
+}
+.login_area .id_find_box .id_pw input {
+    margin-top: 0;
 }
 .login_area .id_find_box .id_pw label {
 	font-weight: 500;
@@ -2375,7 +2469,11 @@ table .state.ok {
 .login_area .id_find_box .rd_choice {
 	display: flex;
 	justify-content: center;
-	align-items: center;
+    align-items: center;
+    padding: 1.3rem 0;
+    border: 0.1rem solid #d0d0d0;
+    border-bottom: 0;
+    border-radius: 0.3rem 0.3rem 0 0;
 	overflow: hidden;
 }
 .login_area .id_find_box .rd_choice li {
@@ -2384,20 +2482,34 @@ table .state.ok {
 .login_area .id_find_box .rd_choice li:first-child {
 	margin: 0;
 }
+.login_area .id_find .btn_area {
+    margin-top: 1.65rem;
+}
 .login_area .id_find dl {
 	display: flex;
 	align-items: center;
-	margin-top: 0.5rem;
+    margin-top: 0;
+    border-bottom: 0.2rem solid #efefef;
 }
 .login_area .id_find dl dt {
 	width: 6.75rem;
-	text-align: center;
+	text-align: left;
 }
 .login_area .id_find dl dd {
 	width: 100%;
 }
-.login_area .id_find dl:first-child {
-    margin-top: 1.35rem;
+.login_area .id_find dl dd input {
+    text-align: right;
+}
+.login_area .id_find dl:last-child {
+    border: 0;
+}
+.login_area .id_find .box {
+    padding: 0 1.75rem;
+    border: 0.1rem solid #d0d0d0;
+    border-top: 0;
+    border-radius: 0 0 0.3rem 0.3rem;
+    overflow: hidden;
 }
 .login_area .find_id_pw {
 	padding: 0.6rem 0.5rem;
@@ -2871,16 +2983,22 @@ table .state.ok {
 	border: 0.1rem solid #666;
 }
 .tbl_tfoot tfoot tr:first-child th , .tbl_tfoot tfoot tr:first-child td {
-	border-top: 0.2rem solid #040404;
+	border-top: 0.1rem solid #040404;
 }
-.tbl_tfoot tfoot tr:last-child th , .tbl_tfoot tfoot tr:last-child td {
-	border-bottom: 0.2rem solid #040404;
+.tbl_tfoot tfoot tr th , .tbl_tfoot tfoot tr td {
+    color: #000;
 }
 .mr0 {
 	margin: 0 auto !important;
 }
+.mrt0 {
+    margin-top: 0 !important;
+}
 .bg_transparent {
 	background: transparent;
+}
+.bor_black {
+    border-color: #000 !important;
 }
 .inpt.bor_line {
 	width: 100%;
@@ -3002,13 +3120,11 @@ table .state.ok {
 .pw_show .show {
 	background-position: -16.8rem -16.6rem;
 }
-
+.mr5 {
+    margin-right: 0.5rem;
+}
 .mr10 {
 	margin-right: 1rem;
-}
-
-.user_add_info {
-	padding: 0.5rem 0;
 }
 .user_add_info:first-child {
 	margin: 0;
@@ -3017,8 +3133,9 @@ table .state.ok {
 	width: 100%;
 	height: 2.45rem;
 	padding: 0 0.7rem;
-	border: 0.1rem solid #040404;
-	line-height: 2.45rem;
+	border: 0;
+    line-height: 2.45rem;
+    text-align: right;
 }
 .vat_txt {
 	padding: 0.9rem 0.9rem 0;
@@ -3146,8 +3263,12 @@ table .state.ok {
 	font-weight: 600;
 	color: #949494;
 }
-
-
+.pdt9 {
+    padding-top: 0.9rem;
+}
+.pdb9 {
+    padding-bottom: 0.9rem;
+}
 
 
 
