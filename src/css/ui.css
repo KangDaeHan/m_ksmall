@@ -1437,6 +1437,7 @@ select , .sel_area select {
 .product_list li .btns {
 	display: flex;
 	align-content: center;
+	align-items: center;
 	justify-content: center;
 	text-align: center;
 }
@@ -1445,6 +1446,7 @@ select , .sel_area select {
 	border: 0.1rem solid #b0b0b0;
 	border-left: 0;
 	font-size: 0.9rem;
+	line-height: 1.8rem;
 	color: #7e7e7e;
 }
 .product_list li .btns .btn:first-child {
@@ -2305,7 +2307,7 @@ table .state.ok {
 }
 .cart_area {
 	background: #fff;
-	padding-top: 2.3rem;
+	padding-top: 1rem;
 }
 .cart_area .icon {
 	position: relative;
@@ -2326,7 +2328,7 @@ table .state.ok {
 }
 .cart_area .all_choice_box {
 	position: relative;
-	margin: 1rem 1.05rem;
+	margin: 0 1.05rem 2.3rem;
 	padding: 0.45rem;
 	border: 0.1rem solid #000;
 }
@@ -2828,6 +2830,8 @@ table .state.ok {
 }
 .terms_area .btn_area {
 	padding-top: 1.5rem;
+	margin-top: 1rem;
+	border-top: 0.2rem solid #fab000;
 }
 .terms_area .btn_area .btn {
 	margin: 0 auto;
@@ -3328,10 +3332,70 @@ table .state.ok {
     font-size: 0.9rem;
     color: #010101;
 }
+.terms_area .question {
+	margin-bottom: 0.5rem;
+	cursor: pointer;
+}
+.terms_area .answer {
+	display: none;
+	padding: 0 1rem;
+	margin-bottom: 0.5rem;
+	border-top: 0.2rem solid #fab000;
+	border-bottom: 0.2rem solid #fab000;
+}
+.terms_area .question h3 {
+	font-size: 1rem;
+	color: #000;
+}
+.terms_area .question.on h3 {
+	color: #f38f00;
+}
+.cart_sel {
+	flex: 1;
+}
+.cart_sel select {
+	width: 100%;
+	height: 2rem;
+	margin: 0 auto;
+	border: 0.1rem solid #b0b0b0;
+	border-left: 0;
+    background: #fff url(../image/bl_arrow_up2.png) no-repeat right 50%;
+	background-size: contain;
+	font-size: 0.9rem;
+	color: #7e7e7e;
+	vertical-align: top;
+}
 
-
-
-
+.order_confirmation {
+	padding-bottom: 4.2rem;
+}
+.okay_area .btn {
+	display: inline-block;
+    width: 5.6rem;
+	height: 1.7rem;
+	margin-left: 0.5rem;
+    background: #c8c8c8;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #000;
+    line-height: 1.7rem;
+	overflow: hidden;
+	text-align: center;
+	vertical-align: middle;
+}
+.okay_area .sel_area2 {
+	display: inline-block;
+	vertical-align: middle;
+}
+.okay_area .sel_area2 select {
+	height: 1.7rem;
+	padding-right: 2.3rem;
+	border: 0.1rem solid #e98e0f;
+	font-size: 0.8rem;
+    font-weight: 500;
+    color: #000;
+	line-height: 1.7rem;
+}
 
 
 /* 가로모드 */

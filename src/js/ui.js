@@ -54,8 +54,6 @@ function tab(e, num){
 	con.hide();
     con.eq(num).show();
 
-	$('.terms_area .btn_area').css('border','0');
-
 	select.find('input:radio[name=id_pw_find]').prop( "checked", true );
 
     menu.click('a' , function(e){
@@ -69,9 +67,9 @@ function tab(e, num){
         select = $(this);
         i = $(this).index();
 		
-		$('.terms_area .btn_area').css('border-top','0.2rem solid #fab000');
 		select.find('input:radio[name=id_pw_find]').prop( "checked", true );
-        select.addClass('on');
+		select.addClass('on');
+		
 		con.eq(i).show();
 
 		e.preventDefault();
@@ -281,6 +279,7 @@ $(document).ready(function() {
 			.slideDown();
 		if ($(this).hasClass("on")) {
 			$(this).toggleClass("on");
+			$('.terms_area .question').siblings().removeClass('on');
 		} else {
 			$(this)
 				.addClass("on")
