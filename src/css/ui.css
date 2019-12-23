@@ -2196,10 +2196,14 @@ table .t_center {
 	border: 0;
 }
 .project_list .list_detail_box {
+	border: 0;
+	border-color: #d1d1d1;
+	border-radius: 0 0 0.2rem 0.2rem;
+	box-shadow: none;
 	background: #fff;
 }
 .f_red {
-	color: #ff0000;
+	color: #ff0000 !important;
 }
 .go_link {
 	color: #0012ff !important;
@@ -3395,6 +3399,28 @@ table .state.ok {
     font-weight: 500;
     color: #000;
 	line-height: 1.7rem;
+}
+.project_list {
+	padding: 0;
+}
+.project_list table {
+	width: 27rem;
+	margin: 0.5rem auto 0.5rem;
+}
+.project_list table th {
+	padding-left: 0;
+	text-align: left;
+}
+.project_list .list_detail_box li {
+	padding: 0.65rem 1.7rem;
+	border-top: 0.1rem solid #efefef;
+	font-size: 1rem;
+}
+.project_list .list_detail_box li:first-child {
+	border-top: 0.1rem solid #efefef;
+}
+.project_list .list_detail_box li span {
+	color: #585858;
 }
 
 
