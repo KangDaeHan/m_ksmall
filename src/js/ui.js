@@ -245,7 +245,9 @@ $(document).ready(function() {
 		} else {
 			$(this)
 				.addClass("on")
+				.parents('.project_list')
 				.siblings()
+				.find('.link')
 				.removeClass("on");
 		}
 		e.preventDefault();

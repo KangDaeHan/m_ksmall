@@ -2128,6 +2128,7 @@ table .t_center {
 	text-align: center;
 }
 .tbl_mult .link {
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -2135,6 +2136,23 @@ table .t_center {
 	height: 100%;
 	color: #e4791f;
 	text-align: center;
+	text-indent: -9999rem;
+	overflow: hidden;
+}
+.tbl_mult .link:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 1.5rem;
+	height: 0.85rem;
+	margin: -0.425rem 0 0 -0.75rem;
+	background: url("../image/sprite.png") no-repeat;
+	background-size: 50rem 50rem;
+	background-position: -27.45rem -19.75rem;
+}
+.tbl_mult .link.on:after {
+	background-position: -27.45rem -16.6rem;
 }
 .tbl_mult .pd0 {
 	padding: 0;
@@ -3404,8 +3422,8 @@ table .state.ok {
 	padding: 0;
 }
 .project_list table {
-	width: 27rem;
-	margin: 0.5rem auto 0.5rem;
+	width: 28rem;
+	margin: 0.5rem 0 0.5rem 1.5rem;
 }
 .project_list table th {
 	padding-left: 0;
