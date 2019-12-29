@@ -34,22 +34,33 @@
     <div class="left">
 		<div class="left_top_util"> <!-- 로그인 후 : login_after 클래스 추가 -->
 			<div class="btn_util">
-				<div class="user"><span>케이에스몰 담당자</span>님</div>
+				<div class="user"><span>케이에스몰 담당자</span> 님</div>
 				<div class="right">
 					<div><a href="#" class="btn orange">로그인</a></div> <!-- 로그인 시 텍스트만 교체 -->
-					<div><a href="#" class="btn gray">회원가입</a></div> <!-- 로그인 시 텍스트만 교체 -->
+					<div><a href="#" class="btn orange">ADMIN</a></div>
 				</div>
 			</div>
 			<a href="#" class="btn_left_close">메뉴 닫기</a>
 		</div>
 		<ul class="left_top_menu">
-			<li><a href="#">회원정보 <span>&gt;</span></a></li>
-			<li><a href="#">장바구니 <span>&gt;</span></a></li>
-			<li><a href="#">주문/배송조회 <span>&gt;</span></a></li>
-			<li><a href="#">결제이용방법안내 <span>&gt;</span></a></li>
-		</ul>
+			<li><a href="#">회원정보 <span></span></a></li>
+			<li><a href="#">장바구니 <span></span></a></li>
+			<li><a href="#">주문/배송<br/>조회 <span></span></a></li>
+			<li><a href="#">결제이용<br/>방법안내 <span></span></a></li>
+        </ul>
+
+        <!-- 관리자용 -->
+        <!-- <ul class="left_top_menu">
+			<li><a href="#">회원정보 <span></span></a></li>
+			<li><a href="#">장바구니 <span></span></a></li>
+			<li><a href="#">주문/배송<br/>조회 <span></span></a></li>
+            <li><a href="#">결제이용<br/>방법안내 <span></span></a></li>
+            <li><a href="#">주문확인 <span></span></a></li>
+        </ul> -->
+        <!-- //관리자용 -->
+        
 		<div class="section">
-			<h2 class="f_orange">PRODUCT MENU</h2>
+			<h2>PRODUCT MENU</h2>
 			<ul class="menu_list product_menu">
 				<li class="menu1"><a href="#">베스트 상품보기</a></li>
 				<li class="menu2"></li>
@@ -66,21 +77,35 @@
 				<li class="menu13"><a href="#">MD 기획</a></li>
 				<li></li>
 				<li></li>
-			</ul>
-		</div>
-		<div class="section">
-			<h2>대리점업무</h2>
-			<ul class="menu_list agency">
-				<li class="menu1"><a href="#">프로젝트주문</a></li>
-				<li class="menu2"><a href="#">인수확인서조회</a></li>
-			</ul>
+            </ul>
+            
+            <!-- 차후 적용 예정 -->
+            <!-- <ul class="menu_list product_menu add_menu">
+				<li class="menu1"><a href="#">베스트 상품보기</a></li>
+				<li class="menu2"></li>
+				<li class="menu3"></li>
+				<li class="menu4"><a href="#">유선단말기</a></li>
+				<li class="menu5"><a href="#">무선단말기</a></li>
+				<li class="menu6"><a href="#">정유사단말기</a></li>
+				<li class="menu7"><a href="#">외식 POS</a></li>
+				<li class="menu8"><a href="#">유통 POS</a></li>
+				<li class="menu9"></li>
+				<li class="menu10"><a href="#">소모품</a></li>
+				<li class="menu11"><a href="#">서명패드</a></li>
+				<li class="menu12"><a href="#">리더기</a></li>
+				<li class="menu13"><a href="#">제휴상품</a></li>
+				<li class="menu14"><a href="#">솔루션</a></li>
+                <li></li>
+            </ul> -->
+            <!-- //차후 적용 예정 -->
+
 		</div>
 		<div class="section last">
-			<h2>고객지원</h2>
-			<ul class="menu_list noti">
-				<li class="menu1"><a href="#">공지사항</a></li>
-				<li class="menu2"><a href="#">FAQ</a></li>
-				<li class="menu3"><a href="#">제조사 A/S 정보</a></li>
+			<h2 class="f_orange">고객업무지원</h2>
+			<ul class="menu_list agency noti">
+				<li class="menu1"><a href="#">프로젝트주문</a></li>
+                <li class="menu2"><a href="#">공지사항</a></li>
+                <li class="menu3"><a href="#">제조사 A/S 정보</a></li>
 			</ul>
 		</div>
 		<div class="link">
@@ -138,402 +163,156 @@
 			<h2 class="tit bg_input">주문배송조회</h2>
 		</div>
 
-		<div class="product_spec_area">
-			<div class="">
-				<div class="tbl_area acknowledgment_list">
-					<table class="tbl_row bg_white tbl_mult">
-						<tbody>
-							<tr>
-								<th style="width: 7.7rem;">주문번호</th>
-								<td colspan="4">
-									AV1910250009548
-								</td>
-							</tr>
-							<tr>
-								<th>인수처코드</th>
-								<td>
-									DDV1000
-								</td>
-								<th>수량</th>
-								<td class="t_center">
-									15
-								</td>
-								<td rowspan="2" style="width: 3.6rem;" class="state"><span>대기</span></td>
-							</tr>
-							<tr>
-								<th>인수처명</th>
-								<td colspan="3">새론정보통신</td>
-							</tr>
-							<tr>
-								<th>모델명</th>
-								<td colspan="4">저건약수정_HIT-15(SET)</td>
-							</tr>
-							<tr>
-								<th>날짜</th>
-								<td colspan="4"><a href="#" class="go_link">20191025192409</a></td>
-							</tr>
-						</tbody>
-					</table>
+		<div class="order_sch_area">
+			<ul class="order_sch">
+				<li><a href="#">기본조회</a></li>
+				<li><a href="#">상세조회</a></li>
+			</ul>
 
-					<table class="tbl_row bg_white tbl_mult">
-						<tbody>
-							<tr>
-								<th style="width: 7.7rem;">주문번호</th>
-								<td colspan="4">
-									AV1910250009548
-								</td>
-							</tr>
-							<tr>
-								<th>인수처코드</th>
-								<td>
-									DDV1000
-								</td>
-								<th>수량</th>
-								<td class="t_center">
-									15
-								</td>
-								<td rowspan="2" style="width: 3.6rem;" class="state ok"><span>승인</span></td>
-							</tr>
-							<tr>
-								<th>인수처명</th>
-								<td colspan="3">새론정보통신</td>
-							</tr>
-							<tr>
-								<th>모델명</th>
-								<td colspan="4">저건약수정_HIT-15(SET)</td>
-							</tr>
-							<tr>
-								<th>날짜</th>
-								<td colspan="4"><a href="#" class="go_link">20191025192409</a></td>
-							</tr>
-						</tbody>
-					</table>
+			<div class="order_sch_con">
+				<div class="con_box">
+					<div class="date_area">
+						<div class="date_box">
+							<span class="tit">시작일</span>
+							<input type="date" class="date_inpt" name="from" value="2019-12-01" />
+						</div>
+						<span class="bullet">-</span>
+						<div class="date_box">
+							<span class="tit">종료일</span class="tit">
+							<input type="date" class="date_inpt" name="to" value="2019-12-15" />
+						</div>
+					</div>
 
-					<table class="tbl_row bg_white tbl_mult">
-						<tbody>
-							<tr>
-								<th style="width: 7.7rem;">주문번호</th>
-								<td colspan="4">
-									AV1910250009548
-								</td>
-							</tr>
-							<tr>
-								<th>인수처코드</th>
-								<td>
-									DDV1000
-								</td>
-								<th>수량</th>
-								<td class="t_center">
-									15
-								</td>
-								<td rowspan="2" style="width: 3.6rem;" class="state"><span>대기</span></td>
-							</tr>
-							<tr>
-								<th>인수처명</th>
-								<td colspan="3">새론정보통신</td>
-							</tr>
-							<tr>
-								<th>모델명</th>
-								<td colspan="4">저건약수정_HIT-15(SET)</td>
-							</tr>
-							<tr>
-								<th>날짜</th>
-								<td colspan="4"><a href="#" class="go_link">20191025192409</a></td>
-							</tr>
-						</tbody>
-					</table>
-
-					<table class="tbl_row bg_white tbl_mult">
-						<tbody>
-							<tr>
-								<th style="width: 7.7rem;">주문번호</th>
-								<td colspan="4">
-									AV1910250009548
-								</td>
-							</tr>
-							<tr>
-								<th>인수처코드</th>
-								<td>
-									DDV1000
-								</td>
-								<th>수량</th>
-								<td class="t_center">
-									15
-								</td>
-								<td rowspan="2" style="width: 3.6rem;" class="state ok"><span>승인</span></td>
-							</tr>
-							<tr>
-								<th>인수처명</th>
-								<td colspan="3">새론정보통신</td>
-							</tr>
-							<tr>
-								<th>모델명</th>
-								<td colspan="4">저건약수정_HIT-15(SET)</td>
-							</tr>
-							<tr>
-								<th>날짜</th>
-								<td colspan="4"><a href="#" class="go_link">20191025192409</a></td>
-							</tr>
-						</tbody>
-					</table>
-
-					<table class="tbl_row bg_white tbl_mult">
-						<tbody>
-							<tr>
-								<th style="width: 7.7rem;">주문번호</th>
-								<td colspan="4">
-									AV1910250009548
-								</td>
-							</tr>
-							<tr>
-								<th>인수처코드</th>
-								<td>
-									DDV1000
-								</td>
-								<th>수량</th>
-								<td class="t_center">
-									15
-								</td>
-								<td rowspan="2" style="width: 3.6rem;" class="state"><span>대기</span></td>
-							</tr>
-							<tr>
-								<th>인수처명</th>
-								<td colspan="3">새론정보통신</td>
-							</tr>
-							<tr>
-								<th>모델명</th>
-								<td colspan="4">저건약수정_HIT-15(SET)</td>
-							</tr>
-							<tr>
-								<th>날짜</th>
-								<td colspan="4"><a href="#" class="go_link">20191025192409</a></td>
-							</tr>
-						</tbody>
-					</table>
-
-					<table class="tbl_row bg_white tbl_mult">
-						<tbody>
-							<tr>
-								<th style="width: 7.7rem;">주문번호</th>
-								<td colspan="4">
-									AV1910250009548
-								</td>
-							</tr>
-							<tr>
-								<th>인수처코드</th>
-								<td>
-									DDV1000
-								</td>
-								<th>수량</th>
-								<td class="t_center">
-									15
-								</td>
-								<td rowspan="2" style="width: 3.6rem;" class="state ok"><span>승인</span></td>
-							</tr>
-							<tr>
-								<th>인수처명</th>
-								<td colspan="3">새론정보통신</td>
-							</tr>
-							<tr>
-								<th>모델명</th>
-								<td colspan="4">저건약수정_HIT-15(SET)</td>
-							</tr>
-							<tr>
-								<th>날짜</th>
-								<td colspan="4"><a href="#" class="go_link">20191025192409</a></td>
-							</tr>
-						</tbody>
-					</table>
-
-					<table class="tbl_row bg_white tbl_mult">
-						<tbody>
-							<tr>
-								<th style="width: 7.7rem;">주문번호</th>
-								<td colspan="4">
-									AV1910250009548
-								</td>
-							</tr>
-							<tr>
-								<th>인수처코드</th>
-								<td>
-									DDV1000
-								</td>
-								<th>수량</th>
-								<td class="t_center">
-									15
-								</td>
-								<td rowspan="2" style="width: 3.6rem;" class="state"><span>대기</span></td>
-							</tr>
-							<tr>
-								<th>인수처명</th>
-								<td colspan="3">새론정보통신</td>
-							</tr>
-							<tr>
-								<th>모델명</th>
-								<td colspan="4">저건약수정_HIT-15(SET)</td>
-							</tr>
-							<tr>
-								<th>날짜</th>
-								<td colspan="4"><a href="#" class="go_link">20191025192409</a></td>
-							</tr>
-						</tbody>
-					</table>
-
-					<table class="tbl_row bg_white tbl_mult">
-						<tbody>
-							<tr>
-								<th style="width: 7.7rem;">주문번호</th>
-								<td colspan="4">
-									AV1910250009548
-								</td>
-							</tr>
-							<tr>
-								<th>인수처코드</th>
-								<td>
-									DDV1000
-								</td>
-								<th>수량</th>
-								<td class="t_center">
-									15
-								</td>
-								<td rowspan="2" style="width: 3.6rem;" class="state ok"><span>승인</span></td>
-							</tr>
-							<tr>
-								<th>인수처명</th>
-								<td colspan="3">새론정보통신</td>
-							</tr>
-							<tr>
-								<th>모델명</th>
-								<td colspan="4">저건약수정_HIT-15(SET)</td>
-							</tr>
-							<tr>
-								<th>날짜</th>
-								<td colspan="4"><a href="#" class="go_link">20191025192409</a></td>
-							</tr>
-						</tbody>
-					</table>
-
-					<table class="tbl_row bg_white tbl_mult">
-						<tbody>
-							<tr>
-								<th style="width: 7.7rem;">주문번호</th>
-								<td colspan="4">
-									AV1910250009548
-								</td>
-							</tr>
-							<tr>
-								<th>인수처코드</th>
-								<td>
-									DDV1000
-								</td>
-								<th>수량</th>
-								<td class="t_center">
-									15
-								</td>
-								<td rowspan="2" style="width: 3.6rem;" class="state"><span>대기</span></td>
-							</tr>
-							<tr>
-								<th>인수처명</th>
-								<td colspan="3">새론정보통신</td>
-							</tr>
-							<tr>
-								<th>모델명</th>
-								<td colspan="4">저건약수정_HIT-15(SET)</td>
-							</tr>
-							<tr>
-								<th>날짜</th>
-								<td colspan="4"><a href="#" class="go_link">20191025192409</a></td>
-							</tr>
-						</tbody>
-					</table>
-
-					<table class="tbl_row bg_white tbl_mult">
-						<tbody>
-							<tr>
-								<th style="width: 7.7rem;">주문번호</th>
-								<td colspan="4">
-									AV1910250009548
-								</td>
-							</tr>
-							<tr>
-								<th>인수처코드</th>
-								<td>
-									DDV1000
-								</td>
-								<th>수량</th>
-								<td class="t_center">
-									15
-								</td>
-								<td rowspan="2" style="width: 3.6rem;" class="state ok"><span>승인</span></td>
-							</tr>
-							<tr>
-								<th>인수처명</th>
-								<td colspan="3">새론정보통신</td>
-							</tr>
-							<tr>
-								<th>모델명</th>
-								<td colspan="4">저건약수정_HIT-15(SET)</td>
-							</tr>
-							<tr>
-								<th>날짜</th>
-								<td colspan="4"><a href="#" class="go_link">20191025192409</a></td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<div class="paginate_box">
-					<a href="#" class="prev">[이전]</a>
-					<span>1</span>
-					<a href="#">2</a>
-					<a href="#">3</a>
-					<a href="#">4</a>
-					<a href="#">5</a>
-					<a href="#" class="next">[다음]</a>
-				</div>
-
-				<div class="tbl_area acknowledgment_list bg_white">
-					<table class="tbl_row bg_white tbl_mult">
-						<tbody>
-							<tr>
-								<th style="width: 7.7rem;">시작일</th>
-								<td>
-									2018-10-26
-								</td>
-							</tr>
-							<tr>
-								<th>종료일</th>
-								<td>
-									2018-10-26
-								</td>
-							</tr>
-							<tr>
-								<th>주문처</th>
-								<td>
-									<input type="text" name="" id="" class="inpt" placeholder="주문처코드 입력"/>
-								</td>
-							</tr>
-							<tr>
-								<th>인수처</th>
-								<td>
-									<input type="text" name="" id="" class="inpt" placeholder="인수처코드 입력"/>
-								</td>
-							</tr>
-							<tr>
-								<th>프로젝트</th>
-								<td>
-									<input type="text" name="" id="" class="inpt" placeholder="프로젝트코드 입력"/>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-
-				<div class="pd15 bg_white">
 					<div class="btn_area">
 						<a href="#" class="btn gray">검색</a>
 					</div>
 				</div>
+				<div class="con_box">
+					<div class="date_area">
+						<div class="date_box">
+							<span class="tit">시작일</span>
+							<input type="date" class="date_inpt" name="from" value="2019-12-01" />
+						</div>
+						<span class="bullet">-</span>
+						<div class="date_box">
+							<span class="tit">종료일</span class="tit">
+							<input type="date" class="date_inpt" name="to" value="2019-12-15" />
+						</div>
+					</div>
 
+					<div class="date_detail_sch">
+						<div class="box">
+							<p>주문처</p>
+							<input type="text" name="" id="" class="inpt" placeholder="주문처"/>
+						</div>
+						<div class="box">
+							<p>인수처</p>
+							<input type="text" name="" id="" class="inpt" placeholder="인수처" />
+						</div>
+						<div class="box">
+							<p>프로젝트</p>
+							<input type="text" name="" id="" class="inpt" placeholder="프로젝트" />
+						</div>
+					</div>
+
+					<div class="btn_area">
+						<a href="#" class="btn gray">검색</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="product_spec_area">
+			<div class="tbl_area tbl_delivery_area">
+				<span class="state">대기</span>
+				<table class="tbl_row">
+					<tbody>
+						<tr>
+							<th style="width: 7.7rem;">주문번호:</th>
+							<td>
+								AV1910250009548
+							</td>
+						</tr>
+						<tr>
+							<th>인수처명(코드):</th>
+							<td>
+								새론정보통신(DDV1000)
+							</td>
+						</tr>
+						<tr>
+							<th>모델명:</th>
+							<td>
+								저건약수정_HIT-15(SET)
+							</td>
+						</tr>
+						<tr>
+							<th>수량:</th>
+							<td>
+								15개
+							</td>
+						</tr>
+						<tr>
+							<th>날짜:</th>
+							<td>
+								2019.10.15
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" class="t_right"><a href="#" class="view">자세히 보기</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="tbl_area tbl_delivery_area">
+				<span class="state ok">승인</span>
+				<table class="tbl_row">
+					<tbody>
+						<tr>
+							<th style="width: 7.7rem;">주문번호:</th>
+							<td>
+								AV1910250009548
+							</td>
+						</tr>
+						<tr>
+							<th>인수처명(코드):</th>
+							<td>
+								새론정보통신(DDV1000)
+							</td>
+						</tr>
+						<tr>
+							<th>모델명:</th>
+							<td>
+								저건약수정_HIT-15(SET)
+							</td>
+						</tr>
+						<tr>
+							<th>수량:</th>
+							<td>
+								15개
+							</td>
+						</tr>
+						<tr>
+							<th>날짜:</th>
+							<td>
+								2019.10.15
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" class="t_right"><a href="#" class="view">자세히 보기</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="paginate_box pdt15">
+				<a href="#" class="prev">[이전]</a>
+				<span>1</span>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a href="#">4</a>
+				<a href="#">5</a>
+				<a href="#" class="next">[다음]</a>
 			</div>
 		</div>
 
@@ -551,7 +330,6 @@
             <li><a href="#">이용약관</a></li>
             <li><a href="#" class="bold">개인정보처리방침</a></li>
 			<li><a href="#">고객상담</a></li>
-            <li><a href="#">현대차주문</a></li>
 		</ul>
 
 		<div class="comm_select">
@@ -580,7 +358,7 @@
 <script type="text/javascript" src="../js/ui.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
-	
+	tab('.order_sch',0);
 });
 </script>
 </body>

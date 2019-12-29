@@ -1724,6 +1724,9 @@ select , .sel_area select {
 .spec_list , .relation_product_slider {
 	display: none;
 }
+.spec_list_box {
+	background: #fff;
+}
 .spec_list_box , .relation_product_area {
 	margin-bottom: 0.85rem;
 }
@@ -1756,6 +1759,10 @@ select , .sel_area select {
 	padding: 0 0 1rem 0;
 	background: #fff;
 	border-bottom: 0.1rem solid #d1d1d1;
+}
+.spec_list_box .tbl_area {
+	margin: 0.9rem 0;
+	box-shadow: none;
 }
 .shipping_info {
 	padding: 2.6rem 0 5rem;
@@ -1954,6 +1961,9 @@ select , .sel_area select {
 .tbl_row tr:first-child th , .tbl_row tr:first-child td {
     border: 0;
 }
+.tbl_row td .link {
+	color: #010101;
+}
 .tbl_row .inpt {
 	width: 100%;
 }
@@ -2083,6 +2093,9 @@ table .t_right {
 table .t_center {
 	text-align: center;
 }
+table .t_left {
+	text-align: left !important;
+}
 .f_gray {
 	color: #a6a6a6;
 }
@@ -2192,7 +2205,13 @@ table .t_center {
 }
 
 .acknowledgment_detail {
-	padding: 2.25rem 1.05rem;
+	padding: 2.25rem 1.05rem 5rem;
+}
+.acknowledgment_detail .tbl_area {
+	margin: 2rem 0 0 0;
+}
+.acknowledgment_detail .tbl_area:first-child {
+	margin: 0;
 }
 .list_detail_box {
 	margin-top: 0.9rem;
@@ -2241,16 +2260,17 @@ table .state.ok {
 	background: #fff;
 }
 .comm_sub_tit_area .tit {
-	background: #e5791f;
 	font-size: 1.5rem;
 	font-weight: 500;
-	color: #fff;
+	color: #000;
 	line-height: 3rem;
 	text-align: center;
 }
 .order_delivery_detail {
-	padding-bottom: 2.25rem;
-	background: #fff;
+	padding-bottom: 5rem;
+}
+.order_delivery_detail .comm_sub_tit_area {
+	background: none;
 }
 .order_delivery_detail .acknowledgment_detail {
 	padding: 1.05rem 1.05rem 0;
@@ -2259,7 +2279,7 @@ table .state.ok {
 	font-weight: 500;
 }
 .notice_area {
-	padding: 2.5rem 0;
+	padding: 0 0 2.5rem 0;
 	background: #fff;
 }
 .notice_area .tbl_area {
@@ -2441,12 +2461,16 @@ table .state.ok {
 	width: 100%;
 	height: 2.9rem;
 	padding: 0;
-    border: 0;
+	border: 0;
+	border-bottom: 0.1rem solid #ccc;
     color: #000;
 	line-height: 2.9rem;
 }
 .login_area .login_box .inpt:first-child {
 	margin: 0;
+}
+.login_area .id_find_box .inpt {
+	border: 0;
 }
 .login_area .login_box .chk_list {
 	margin: 0.6rem 0 1.75rem 0.8rem;
@@ -2549,10 +2573,8 @@ table .state.ok {
 .signup_area .signup_terms_box {
 	display: none;
 	height: 11.75rem;
-	padding: 0 0.75rem 1.35rem;
-	margin: 0 1.05rem;
-	border: 0.1rem solid #000;
-	border-top: 0;
+	padding: 0;
+	margin: 0 auto;
 	overflow: auto;
 }
 .signup_area .signup_terms_box * , .policy_box * , .terms * {
@@ -2577,18 +2599,41 @@ table .state.ok {
 .signup_area .signup_terms_box .point {
 	color: #9d9d9c;
 }
+
 .signup_area .agree_box {
 	position: relative;
 	margin: 1rem 1.05rem 0;
-	padding: 0.9rem 0.75rem;
-	border: 0.1rem solid #242424;
+	padding: 0.9rem 1.7rem;
+	/* border: 0.1rem solid #242424; */
+    background: #fff;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 0.35rem 0 rgba(177, 143, 143, 0.5);
+    overflow: hidden;
+	line-height: 1;
+}
+.signup_area .agree_box:first-child {
+	margin-top: 0;
 }
 .signup_area .agree_box .pos_right {
 	position: absolute;
-	top: 50%;
-	right: 0.5rem;
-	margin-top: -1rem;
+	top: 0.7rem;
+	right: 1.7rem;
 }
+/* .signup_area .agree_box .pos_right input[type="checkbox"] , .all_agree input[type="checkbox"] {
+	width: 2rem;
+	height: 1.95rem;
+	background-position: -39.7rem -16.4rem;
+}
+.signup_area .agree_box .pos_right input[type="checkbox"]:checked , .all_agree input[type="checkbox"]:checked {
+	background-position: -39.7rem -19.05rem;
+} */
+.signup_area .agree_box .view {
+	margin-top: 0.7rem;
+	padding-top: 0.4rem;
+	border-top: 0.1rem solid #efefef;
+}
+
+
 .signup_area .agree_box label {
 	margin: 0;
 	font-size: 1.2rem;
@@ -2597,10 +2642,22 @@ table .state.ok {
 	color: #000;
 }
 .signup_area .agree_box .view_more {
+	position: relative;
 	margin-right: 0.3rem;
 	font-size: 1.2rem;
 	font-weight: 500;
-	color: #e47a21;
+	color: #f59415;
+	vertical-align: middle;
+}
+.signup_area .agree_box .view_more:after {
+	content: '';
+	display: inline-block;
+	width: 1.2rem;
+	height: 1rem;
+	margin: -0.2rem 0 0 0.5rem;
+	background: url("../image/sprite.png") no-repeat;
+	background-size: 50rem 50rem;
+	background-position: -32rem -16.8rem;
 	vertical-align: middle;
 }
 .signup_area .agree_box.on .view_more {
@@ -2619,8 +2676,26 @@ table .state.ok {
 .all_agree label {
 	font-size: 1.5rem;
 	font-weight: 500;
+	line-height: 1;
 	color: #000;
 }
+
+.signup_area .agree_box .btn_expand_area {
+	display: none;
+	padding: 0.5rem 0 0;
+	border-top: 0.1rem solid #efefef;
+	text-align: right;
+}
+.signup_area .agree_box .btn_expand_area .btn_expand_close {
+	display: inline-block;
+	width: 1.35rem;
+    height: 1.3rem;
+    background-position: -14.5rem -1.1rem;
+	font-size: 0;
+	line-height: 0;
+	overflow: hidden;
+}
+
 
 .certi_name , .certi_number {
 	display: flex;
@@ -2650,16 +2725,15 @@ table .state.ok {
 	overflow: hidden;
 }
 .agree_list {
-	margin: 0.45rem 1.05rem 0;
-	border: 0.1rem solid #242424;
-	background: #d8d8d8;
+	margin: 0;
 }
 .agree_list li {
-	padding: 0.45rem 0 0.45rem 8.45rem;
+	padding: 0.45rem 0 0.45rem 2rem;
+	border-top: 0.1rem solid #efefef;
 }
 .agree_list .all_agree {
-	background: #fff;
-	border-bottom: 0.1rem solid #242424;
+	padding-left: 0;
+	border-top: 0;
 	text-align: left;
 }
 .agree_list li label {
@@ -2728,6 +2802,12 @@ table .state.ok {
 }
 .policy_box .section {
 	padding: 0 1rem 0.5rem;
+}
+.policy_box .tbl_area {
+	padding: 0;
+	margin: 0.9rem 0;
+	border-radius: 0;
+	box-shadow: none;
 }
 .tbl_area table .bor_bottom_no {
 	border-bottom: 0;
@@ -2860,39 +2940,55 @@ table .state.ok {
 }
 
 .customer_menu {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	position: fixed;
+	top: 6.6rem;
+	left: 0;
+	width: 100%;
 	padding: 1rem;
+	background: #fff;
+	z-index: 10;
+	text-align: center;
 }
 .customer_menu li {
-	margin-left: 0.5rem;
+	position: relative;
+	display: table;
+	float: left;
+	width: 9.2rem;
+	height: 4rem;
+	margin-left: 1.15rem;
+	background: #faaf00;
+	box-shadow:inset #ffffff 0.1rem 0.1rem 0.2rem 0,#999999 0.1rem 0.1rem 0.1rem;
+	border-radius: 0.2rem;
+	vertical-align: middle;
+	text-align: center;
+	overflow: hidden;
 }
 .customer_menu li:first-child {
 	margin: 0;
 }
 .customer_menu li a {
-	display: block;
+	display: table-cell;
 	width: 100%;
-	height: 100%;
+	height: auto;
 	padding: 0.3rem 0.5rem;
-	border: 0.1rem solid #fab000;
 	font-size: 0.9rem;
 	line-height: 1.1;
-	color: #5a5a5a;
+	color: #fff;
+	vertical-align: middle;
+	text-align: center;
 }
-.customer_menu li a span {
-	font-size: 0.6rem;
-	color: #898888;
+.customer_menu li.on a {
+	color: #010101;
 }
-#agency_inquiry {
+#agency_inquiry .tit {
     border-top: 0.2rem solid #fab000;
 }
 .customer_inquiry .tit {
     position: relative;
     display: block;
-    padding-left: 1.5rem;
-    margin: 1.5rem 0 1.5rem 1.5rem;
+    padding: 1.5rem 1.5rem 0 3rem;
+	margin: 0 0 1.5rem 0;
+	border-top: 0.2rem solid #054fff;
     font-size: 1rem;
     color: #000;
     letter-spacing: -0.1rem;
@@ -2900,12 +2996,12 @@ table .state.ok {
 .customer_inquiry .tit:before {
 	content: '';
     position: absolute;
-    top: 50%;
-    left: 0;
+    top: 1.85rem;
+    left: 1.5rem;
     display: block;
     width: 0.9rem;
     height: 0.9rem;
-    margin-top: -0.45rem;
+    /* margin-top: -0.45rem; */
     background: #fab000;
     border-radius: 50%;
     overflow: hidden;
@@ -2943,10 +3039,6 @@ table .state.ok {
 .inquiry .box p {
     margin-top: 0.35rem;
 }
-.customer_inquiry {
-    margin-top: 1.5rem;
-    border-top: 0.2rem solid #054fff;
-}
 .credit_card_inquiry .box .department {
     display: flex;
     flex-direction: column;
@@ -2961,8 +3053,8 @@ table .state.ok {
     height: 10rem;
     margin-left: 1.15rem;
 }
-.customer_inquiry.bor_gray {
-    margin-top: 1.5rem;
+.customer_inquiry .bor_gray {
+    padding-top: 1.5rem;
     border-color: #b5b5b5;
 }
 .customer_inquiry .name {
@@ -3094,6 +3186,7 @@ table .state.ok {
 	overflow: hidden;
 }
 .ly .pop_footer {
+	padding-bottom: 1.45rem;
 	text-align: center;
 }
 .pop_signup .pop_content {
@@ -3114,10 +3207,9 @@ table .state.ok {
     height: 2.45rem;
     padding: 0 0.7rem;
     border-radius: 0.3rem;
-    background: #dcdada;
-    border: 0.1rem solid #646161;
     line-height: 2.45rem;
-    overflow: hidden;
+	overflow: hidden;
+	text-align: right;
 }
 .tbl_modify .inpt {
 	background: #fff;
@@ -3131,10 +3223,13 @@ table .state.ok {
 .pw_show {
 	position: relative;
 }
+.pw_show input {
+	padding-right: 2.5rem !important;
+}
 .pw_show .hide , .pw_show .show {
 	position: absolute;
 	top: 50%;
-	right: 0.7rem;
+	right: 0;
 	width: 1.9rem;
 	height: 1.9rem;
 	margin-top: -0.95rem;
@@ -3295,11 +3390,13 @@ table .state.ok {
 .pdb9 {
     padding-bottom: 0.9rem;
 }
+.pdt0 {
+	padding-top: 0;
+}
 
 .notice_box {
     padding-top: 1.5rem;
     margin-bottom: 3.55rem;
-    border-top: 0.1rem solid #b7b5b5;
 }
 .notice_box .notice_top {
     position: relative;
@@ -3440,6 +3537,236 @@ table .state.ok {
 .project_list .list_detail_box li span {
 	color: #585858;
 }
+.sub_fixed_top {
+	position: fixed;
+	top: 3.6rem;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+}
+.customer_inquiry .department {
+	position: relative;
+	width: 26.15rem;
+	margin: 0 auto;
+	padding: 0.6rem 0;
+	border: 0;
+	background: #d8d8d8;
+	border-radius: 0.3rem;
+	font-size: 1.1rem;
+	font-weight: 500;
+	color: #000;
+	line-height: 1;
+	text-align: center;
+	z-index: 5;
+}
+.customer_area .customer_inquiry .tbl_area {
+	margin-top: -1rem;
+	margin-bottom: 2rem;
+	padding: 1rem 1rem 0.5rem;
+}
+
+.order_sch_area {
+	background: #fff;
+	padding: 1rem;
+}
+.order_sch_area .order_sch {
+	display: flex;
+	text-align: center;
+}
+.order_sch_area .order_sch li {
+	flex: 1;
+}
+.order_sch_area .order_sch li a {
+	display: block;
+	width: 100%;
+	padding-bottom: 0.2rem;
+	font-size: 1.2rem;
+	color: #d1d1d1;
+}
+.order_sch_area .order_sch li.on a {
+	color: #09306e;
+}
+.order_sch_area .order_sch li.on {
+	border-bottom: 0.2rem solid #09306e;
+}
+
+/* 달력 */
+.date_inpt {
+	min-width: auto;
+	width: 10rem;
+	padding-right: 0.5rem;
+	border: 0;
+	font-size: 1.1rem;
+	color: #000;
+	text-align: right;
+}
+.date_area {
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: space-between;
+}
+.date_box {
+	display: flex;
+	align-content: center;
+	align-items: center;
+	height: 2.75rem;
+	margin: 1.2rem 0;
+    padding: 0 0 0 1rem;
+    background: #fff;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 0.35rem 0 rgba(177, 143, 143, 0.5);
+	overflow: hidden;
+	vertical-align: middle;
+}
+.date_box .tit {
+	margin-right: 0.3rem;
+	font-size: 1.2rem;
+	color: #868686;
+}
+.date_area .bullet {
+	margin: 0 0.5rem;
+	font-size: 1.2rem;
+	color: #868686;
+}
+.date_detail_sch {
+	display: flex;
+	margin-bottom: 1.2rem;
+	align-content: center;
+	align-items: center;
+}
+.date_detail_sch .box {
+	flex: 1;
+	padding-left: 0.5rem;
+}
+.date_detail_sch .box:first-child {
+	padding-left: 0;
+}
+.date_detail_sch p {
+	font-size: 1.2rem;
+	color: #868686;
+	text-align: center;
+}
+.date_detail_sch .inpt {
+	width: 100%;
+	height: 2.75rem;
+	padding: 0 0.5rem;
+	background: #fff;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 0.35rem 0 rgba(177, 143, 143, 0.5);
+}
+.tbl_delivery_area {
+	position: relative;
+	margin-top: 2.35rem;
+	padding-top: 1rem;
+	overflow: visible;
+}
+.tbl_delivery_area .state {
+	position: absolute;
+	top: -1.175rem;
+	left: 1.75rem;
+	min-width: 4.1rem;
+	height: 2.35rem;
+	background: #f99900;
+	border-radius: 0.3rem;
+	font-size: 1.1rem;
+	line-height: 2.35rem;
+	color: #fff;
+	text-align: center;
+}
+.tbl_delivery_area .state.ok {
+	background: #f94600;
+}
+.tbl_delivery_area .view {
+	position: relative;
+	font-size: 1.1rem;
+	color: #f59415;
+}
+.tbl_delivery_area .view:after {
+	content:'';
+	display: inline-block;
+	width: 1.2rem;
+	height: 1rem;
+	margin: -0.2rem 0 0 0.5rem;
+	background: url("../image/sprite.png") no-repeat;
+	background-position: -32rem -16.8rem;
+	background-size: 50rem 50rem;
+	vertical-align: middle;
+	overflow: hidden;
+}
+.comm_sub_tit_area .icon {
+	position: relative;
+	display: inline-block;
+	margin-right: 0.5rem;
+	background: url("../image/sprite.png") no-repeat;
+	background-size: 50rem 50rem;
+	vertical-align: middle;
+}
+.comm_sub_tit_area .icon.delivery {
+	width: 2.75rem;
+	height: 1.75rem;
+	background-position: -31.15rem -19.25rem;
+}
+.comm_sub_tit_area .icon.order {
+	width: 2.45rem;
+	height: 2.25rem;
+	margin-top: -0.3rem;
+	background-position: -35.45rem -16.4rem;
+}
+table .pd0 {
+	padding: 0;
+}
+.certification_area .inpt_type2 {
+	width: 4.2rem !important;
+	height: 1.9rem;
+	background: #efefef;
+	line-height: 1.9rem;
+	vertical-align: middle;
+}
+.certification_area .btn {
+	display: inline-block;
+	width: 6rem;
+	height: 1.9rem;
+	margin-left: 0.1rem;
+	font-size: 0.9rem;
+	color: #fff;
+	line-height: 1.9rem;
+	vertical-align: middle;
+	text-align: center;
+}
+.btn.red {
+	background: #e91d0f;
+}
+.signup_reg_area .btn_post {
+	display: inline-block;
+	width: auto;
+	height: 2.45rem;
+	padding: 0 0.7rem;
+	font-size: 0.9rem;
+	color: #fff;
+	line-height: 2.45rem;
+	border-radius: 0;
+}
+.sel_type2 {
+	text-align: right;
+}
+.sel_type2 select {
+	min-width: 11rem;
+	height: 2.45rem;
+	padding: 0 3.5rem 0 1rem;
+	border: 0;
+	background: #fff url("../image/bl_arrow_up4.png") no-repeat right 50%;
+    background-size: contain;
+}
+
+.acknowledgment_list_area {
+	padding-top: 0.9rem;
+}
+.acknowledgment_list_area .tbl_area {
+	padding-top: 0;
+	margin-top: 0;
+}
+
 
 
 /* 가로모드 */

@@ -34,22 +34,33 @@
     <div class="left">
 		<div class="left_top_util"> <!-- 로그인 후 : login_after 클래스 추가 -->
 			<div class="btn_util">
-				<div class="user"><span>케이에스몰 담당자</span>님</div>
+				<div class="user"><span>케이에스몰 담당자</span> 님</div>
 				<div class="right">
 					<div><a href="#" class="btn orange">로그인</a></div> <!-- 로그인 시 텍스트만 교체 -->
-					<div><a href="#" class="btn gray">회원가입</a></div> <!-- 로그인 시 텍스트만 교체 -->
+					<div><a href="#" class="btn orange">ADMIN</a></div>
 				</div>
 			</div>
 			<a href="#" class="btn_left_close">메뉴 닫기</a>
 		</div>
 		<ul class="left_top_menu">
-			<li><a href="#">회원정보 <span>&gt;</span></a></li>
-			<li><a href="#">장바구니 <span>&gt;</span></a></li>
-			<li><a href="#">주문/배송조회 <span>&gt;</span></a></li>
-			<li><a href="#">결제이용방법안내 <span>&gt;</span></a></li>
-		</ul>
+			<li><a href="#">회원정보 <span></span></a></li>
+			<li><a href="#">장바구니 <span></span></a></li>
+			<li><a href="#">주문/배송<br/>조회 <span></span></a></li>
+			<li><a href="#">결제이용<br/>방법안내 <span></span></a></li>
+        </ul>
+
+        <!-- 관리자용 -->
+        <!-- <ul class="left_top_menu">
+			<li><a href="#">회원정보 <span></span></a></li>
+			<li><a href="#">장바구니 <span></span></a></li>
+			<li><a href="#">주문/배송<br/>조회 <span></span></a></li>
+            <li><a href="#">결제이용<br/>방법안내 <span></span></a></li>
+            <li><a href="#">주문확인 <span></span></a></li>
+        </ul> -->
+        <!-- //관리자용 -->
+        
 		<div class="section">
-			<h2 class="f_orange">PRODUCT MENU</h2>
+			<h2>PRODUCT MENU</h2>
 			<ul class="menu_list product_menu">
 				<li class="menu1"><a href="#">베스트 상품보기</a></li>
 				<li class="menu2"></li>
@@ -66,21 +77,35 @@
 				<li class="menu13"><a href="#">MD 기획</a></li>
 				<li></li>
 				<li></li>
-			</ul>
-		</div>
-		<div class="section">
-			<h2>대리점업무</h2>
-			<ul class="menu_list agency">
-				<li class="menu1"><a href="#">프로젝트주문</a></li>
-				<li class="menu2"><a href="#">인수확인서조회</a></li>
-			</ul>
+            </ul>
+            
+            <!-- 차후 적용 예정 -->
+            <!-- <ul class="menu_list product_menu add_menu">
+				<li class="menu1"><a href="#">베스트 상품보기</a></li>
+				<li class="menu2"></li>
+				<li class="menu3"></li>
+				<li class="menu4"><a href="#">유선단말기</a></li>
+				<li class="menu5"><a href="#">무선단말기</a></li>
+				<li class="menu6"><a href="#">정유사단말기</a></li>
+				<li class="menu7"><a href="#">외식 POS</a></li>
+				<li class="menu8"><a href="#">유통 POS</a></li>
+				<li class="menu9"></li>
+				<li class="menu10"><a href="#">소모품</a></li>
+				<li class="menu11"><a href="#">서명패드</a></li>
+				<li class="menu12"><a href="#">리더기</a></li>
+				<li class="menu13"><a href="#">제휴상품</a></li>
+				<li class="menu14"><a href="#">솔루션</a></li>
+                <li></li>
+            </ul> -->
+            <!-- //차후 적용 예정 -->
+
 		</div>
 		<div class="section last">
-			<h2>고객지원</h2>
-			<ul class="menu_list noti">
-				<li class="menu1"><a href="#">공지사항</a></li>
-				<li class="menu2"><a href="#">FAQ</a></li>
-				<li class="menu3"><a href="#">제조사 A/S 정보</a></li>
+			<h2 class="f_orange">고객업무지원</h2>
+			<ul class="menu_list agency noti">
+				<li class="menu1"><a href="#">프로젝트주문</a></li>
+                <li class="menu2"><a href="#">공지사항</a></li>
+                <li class="menu3"><a href="#">제조사 A/S 정보</a></li>
 			</ul>
 		</div>
 		<div class="link">
@@ -243,6 +268,12 @@
     </div>
 </div>
 <!-- //하단영역 -->
+
+<!-- 페이지 로딩 -->
+<div class="loading">
+	<img src="../image/loader.gif" alt="">
+</div>
+<!-- //페이지 로딩 -->
 <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="../js/jquery-migrate-3.1.0.min.js"></script>
 <script type="text/javascript" src="../js/jquery-ui-1.12.1.min.js"></script>

@@ -18,12 +18,18 @@ function moreView(el){
 	});
 }
 
-function scrollMove(seq){
+function scrollMove(seq , active){
+	// console.log(active);
+	$(active).parent().addClass('on').siblings().removeClass('on');
+	$("#" + seq).css('paddingTop','12.5rem');
+	$("#" + seq).next().css('paddingTop','0');
 	var offset = $("#" + seq).offset();
-	$('html, body').animate({scrollTop : offset.top}, 400);
+
+	$('html, body').animate({scrollTop : offset.top}, 200);
 }
 
-function expandCollapse(id , el) {
+
+function expandCollapse(id , el , active) {
 	var list_box = $("." + id);
 
 	if ( list_box.is(":visible") ) {
@@ -38,7 +44,16 @@ function expandCollapse(id , el) {
 		list_box.hide();
 		e.preventDefault();
 	});
+
+	$(active).hide();
+	$(active).parents('.agree_box').children('.btn_expand_area').show();
 }
+
+$(".btn_expand_close").click(function(){
+	$(this).parent().prev('.signup_terms_box').slideUp();
+	$(this).parent().prev('.signup_terms_box').prev('.view').children().show();
+	$(this).parent().hide();
+});
 
 var faqtit = $(".question");
 var faqsubmu = $(".answer");
@@ -290,6 +305,58 @@ $(document).ready(function() {
 		}
 		e.preventDefault();
 	});
+
+
+	var d = new Date();
+	var currMonth = d.getMonth();
+	var currYear = d.getFullYear();
+	var startDate = new Date(currYear, currMonth, 1);
+
+	$.datepicker.setDefaults({
+		dateFormat: "yy-mm-dd",
+        prevText: '이전 달',
+        nextText: '다음 달',
+        monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+        monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+        dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+        dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+        dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+        showMonthAfterYear: true,
+        yearSuffix: '년'
+	});
+	
+	from = $( "#from" )
+	.datepicker({
+		defaultDate: startDate,
+		changeMonth: true,
+		showOn: "both",
+		numberOfMonths: 1
+	})
+	.datepicker("setDate", startDate)
+	.on( "change", function() {
+		to.datepicker( "option", "minDate", getDate( this ) );
+	}),
+	to = $( "#to" ).datepicker({
+		defaultDate: 'today',
+		changeMonth: true,
+		showOn: "both",
+		numberOfMonths: 1
+	})
+	.datepicker("setDate", 'today')
+	.on( "change", function() {
+		from.datepicker( "option", "maxDate", getDate( this ) );
+	});
+
+	function getDate( element ) {
+		var date;
+		try {
+		  date = $.datepicker.parseDate( element.value );
+		} catch( error ) {
+		  date = null;
+		}
+   
+		return date;
+	}
 	
 });
 
